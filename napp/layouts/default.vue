@@ -1,18 +1,10 @@
 <template>
 
   <div class="bg-gradient-to-r from-gray-200 to-gray-100 text-gray-700">
-    
-    <div class="">
 
-      <div class="container mx-auto">
-
-        <transition name="fade" mode="out-in">
-          <Nuxt id="page" />
-        </transition>
-
-      </div>      
-    </div>
-
+    <transition name="fade" mode="out-in">
+      <Nuxt id="page" />
+    </transition>
 
   </div>
      

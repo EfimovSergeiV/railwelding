@@ -1,3 +1,5 @@
 {
-  "language": "Русский"
+  "language": "Русский",
+  "welcome": "Привет мир",
+  "about_us": "О Нас"
 }

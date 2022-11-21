@@ -1,3 +1,5 @@
 {
-    "language": "Deutsch"
+    "language": "Deutsch",
+    "welcome": "Hallo Welt",
+    "about_us": "Über uns"
   }
