@@ -1,0 +1,270 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #129bdf;
+  border-radius: 6px;
+  box-shadow: inset 1px 1px 10px #129bdf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #129bdf;
+}
+
+
+// Main style
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+}
+
+h1 {
+	display: block;
+  font-size: 1.5em;
+  /* font-weight: bold; */
+}
+
+h2 {
+	display: block;
+  font-size: 1.4em;
+  /* font-weight: bold; */
+}
+
+h3 {
+	display: block;
+  font-size: 1.17em;
+  /* font-weight: bold; */
+}
+
+h4 {
+	display: block;
+  /* font-weight: bold; */
+}
+
+h5 {
+	display: block;
+  font-size: .83em;
+  /* font-weight: bold; */
+}
+
+h6 {
+  display: block;
+  font-size: .67em;
+  /* font-weight: bold; */
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+pre {
+  margin: 0;
+}
+
+
+.hooper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .hooper-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background-color: #efefef;
+  }
+  .hooper-progress-inner {
+    height: 100%;
+    background-color: #4285f4;
+    transition: 300ms;
+  }
+  .hooper-pagination {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    padding: 5px 10px;
+  }
+  .hooper-indicators {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hooper-indicator:hover,
+  .hooper-indicator.is-active {
+    background-color: #4285f4;
+  }
+  .hooper-indicator {
+    margin: 0 2px;
+    width: 12px;
+    height: 4px;
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .hooper-pagination.is-vertical {
+    bottom: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hooper-pagination.is-vertical .hooper-indicators {
+    flex-direction: column;
+  }
+  .hooper-pagination.is-vertical .hooper-indicator {
+    width: 6px;
+  }
+  svg.icon.icon-arrowRight {
+    fill: #fff;
+  } 
+  svg.icon.icon-arrowLeft { 
+    fill: #fff;
+  } 
+  .hooper-next,
+  .hooper-prev {
+    background-color: #47556995;
+    border: none;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 70px;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+  }
+  .hooper-next.is-disabled,
+  .hooper-prev.is-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  .hooper-next {
+    right: 0;
+  }
+  .hooper-prev {
+    left: 0;
+  }
+  .hooper-navigation.is-vertical .hooper-next {
+    top: auto;
+    bottom: 0;
+    transform: initial;
+  }
+  .hooper-navigation.is-vertical .hooper-prev {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    transform: initial;
+  }
+  .hooper-navigation.is-rtl .hooper-prev {
+    left: auto;
+    right: 0;
+  }
+  .hooper-navigation.is-rtl .hooper-next {
+    right: auto;
+    left: 0;
+  }
+  .hooper {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+  }
+  .hooper * {
+    box-sizing: border-box;
+  }
+  .hooper-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .hooper-track {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .hooper.is-vertical .hooper-track {
+    flex-direction: column;
+    height: 200px;
+  }
+  
+  .hooper.is-rtl {
+    direction: rtl;
+  }
+  
+  .hooper-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .hooper-ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 3px;
+      padding-inline-end: 3px;
+  }
