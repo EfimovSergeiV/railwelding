@@ -8,7 +8,15 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'main-primary': '#002F52',
+        'main-secondary': '#0F293E',
+        'main-dark': '#001E35',
+        'main-info': '#2A72A9',
+        'main-light': '#4C80A9',
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

@@ -1,0 +1,1 @@
+https://nuxtjs.org/docs/features/file-system-routing/
