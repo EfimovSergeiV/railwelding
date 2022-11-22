@@ -9,7 +9,7 @@
             <p class="text-gray-300">{{ $t('welcome') }}</p>
           </div>
           <div class="">
-            <select v-model="locale" class="px-16 py-1 rounded" aria-label="">
+            <select v-model="locale" class="py-0.5 text-xs rounded" aria-label="">
               <option value="en">English</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
@@ -19,7 +19,12 @@
       </div>
     </div>
 
+
+
+
+    
     <div class="container mx-auto px-4 my-10">
+      
       <div class="flex">
         <nuxt-link :to="localePath('index')">
           <img src="~/assets/css/images/railwelding-logo.png" width="220" />
@@ -27,13 +32,20 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center">
+    <div class="container mx-auto px-4r my-4">
+      <div class="flex justify-center items-cente gap-4">
 
-      <div class="mx-2"><nuxt-link :to="localePath({ name: 'catalog' })" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath({ name: 'services'})" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath({ name: 'about' })" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
+        <div class="mx-2"><nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link></div>
+        <div class="mx-2"><nuxt-link :to="localePath({ name: 'services'})" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
+        <div class="mx-2"><nuxt-link :to="localePath({ name: 'about' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
 
+      </div>      
     </div>
+
+
+
+
+
 
     <div>
       <hooper
