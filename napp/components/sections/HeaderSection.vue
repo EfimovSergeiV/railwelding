@@ -29,11 +29,9 @@
 
     <div class="flex justify-center items-center">
 
-      <div class="mx-2"><nuxt-link :to="localePath('about')" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">Mobile Flash-Butt Welding</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath('about')" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">Holland Automated Manganese Refurbishment</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath('about')" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">Thermite Welding</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath('about')" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">Track Measurement Technology</nuxt-link></div>
-      <div class="mx-2"><nuxt-link :to="localePath('about')" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
+      <div class="mx-2"><nuxt-link :to="localePath({ name: 'catalog' })" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link></div>
+      <div class="mx-2"><nuxt-link :to="localePath({ name: 'services'})" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
+      <div class="mx-2"><nuxt-link :to="localePath({ name: 'about' })" class="text-sm text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
 
     </div>
 
