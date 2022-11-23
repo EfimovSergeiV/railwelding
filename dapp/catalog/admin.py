@@ -3,9 +3,15 @@ from ckeditor.widgets import CKEditorWidget
 from mptt.admin import DraggableMPTTAdmin
 from mptt.forms import MPTTAdminForm
 from parler.forms import TranslatedField
-from parler.admin import TranslatableAdmin, TranslatableModelForm
+from parler.admin import TranslatableAdmin, TranslatableModelForm, TranslatableTabularInline
 
-from catalog.models import ProductModel, ServiceModel, CategoryModel
+from catalog.models import (
+    CategoryModel,
+    ProductModel,
+    ServiceModel,
+    ProductAdvantagesModel,
+    ProductPropertiesModel,
+)
 
 
 
@@ -27,6 +33,15 @@ class CategoryAdmin(TranslatableAdmin, DraggableMPTTAdmin):
 
 
 
+class ProductAdvantagesInlines(TranslatableTabularInline):
+    model = ProductAdvantagesModel
+    extra = 0
+
+class ProductPropertiesInlines(TranslatableTabularInline):
+    model = ProductPropertiesModel
+    extra = 0
+
+
 class ProductForm(TranslatableModelForm):
     description = TranslatedField(label='Описание', widget=CKEditorWidget())
 
@@ -42,6 +57,10 @@ class ProductAdmin(TranslatableAdmin):
     ordering = ('id',)
     fieldsets = (
         (None, {'fields': (('name', 'priority', 'activated'),('description',),)}),
+    )
+    inlines = (
+        ProductAdvantagesInlines,
+        ProductPropertiesInlines,
     )
 
 

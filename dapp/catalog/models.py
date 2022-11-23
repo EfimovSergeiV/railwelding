@@ -1,3 +1,8 @@
+"""
+PS: Знаю про существование абстрактных классов,
+Придумываю с головы, поэтому тут пока так!
+"""
+
 from django.db import models
 from .managers import CategoryManager
 from mptt.models import MPTTModel, TreeForeignKey
@@ -53,7 +58,41 @@ class ProductModel(TranslatableModel):
         return self.name
 
 
-# class ProductAdvantagesModel(TranslatableModel)
+class ProductAdvantagesModel(TranslatableModel):
+    """ Модель преимуществ товаров """
+
+    product = models.ForeignKey(ProductModel, on_delete=models.CASCADE, related_name="advantages_product")
+    styles = models.CharField(verbose_name="Стили", max_length=500, help_text="Стили TailwindCSS, которые будут добавлены к классу (https://tailwindcss.com)", )
+
+    translations = TranslatedFields(
+        text = models.CharField(verbose_name="Текст", max_length=1000)
+    )
+
+    class Meta:
+        verbose_name = 'Преимущество'
+        verbose_name_plural = 'Преимущества'
+
+    def __str__(self):
+        return self.product.name
+
+
+class ProductPropertiesModel(TranslatableModel):
+    """ Модель свойств товара """
+
+    product = models.ForeignKey(ProductModel, on_delete=models.CASCADE, related_name="properties_product")
+    styles = models.CharField(verbose_name="Стили", max_length=500, help_text="Стили TailwindCSS, которые будут добавлены к классу (https://tailwindcss.com)", )
+
+    translations = TranslatedFields(
+        text = models.CharField(verbose_name="Текст", max_length=1000),
+        value = models.CharField(verbose_name="Значение", max_length=1000)
+    )
+        
+    class Meta:
+        verbose_name = 'Свойство'
+        verbose_name_plural = 'Свойства'
+
+    def __str__(self):
+        return self.product.name
 
 
 
