@@ -1,8 +1,10 @@
 {
     "language": "Deutsch",
     "welcome": "Hallo Welt",
-    "about_us": "Über uns",
+    "home": "Startseite",
     "catalog": "Katalog",
     "services": "Dienstleistungen",
+    "about_us": "Über uns",
+    "contact_us": "Kontaktiere uns",
     "lorem_ipsum": "Was ich daran bemerkenswert finde ist, das dieser Platzhaltertext als Industriestandard seit dem im 15ten Jhh verwendet wird. Damals wurde ein Setzkasten genommen die Buchstaben durchmischt und ein Druckpobe der Schrift angefertigt; er hat nicht nur fünf Jahrhunderte Schriftsatz überlebt, sondern auch den Photosatz und ist grundlegend unverändert geblieben, bis auf einer gelegentlichen Änderung bei einer Endung wie ing oder y. Die Ironie des ganzen ist, das wenn man das verdrehte Latein versteht, so wird es so unverständlich wie griechisch und die Phrase es hört sich für mich wie Griechisch an sowie das Englische greeking haben die gleiche semantische Herkunft."
   }

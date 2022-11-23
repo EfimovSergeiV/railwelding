@@ -1,8 +1,10 @@
 {
   "language": "English",
   "welcome": "Hello World",
-  "about_us": "About Us",
+  "home": "Home",
   "catalog": "Catalog",
   "services": "Services",
+  "about_us": "About Us",
+  "contact_us": "Contact Us",
   "lorem_ipsum": "What I find remarkable about this is that this placeholder text has been used as an industry standard since the 15th century. At that time, a type case was taken, the letters were mixed up and a print sample of the typeface was made; it has survived not only five centuries of typesetting, but also phototypesetting, and has remained fundamentally unchanged except for an occasional change in an ending like ing or y. The irony of it all is that if you understand twisted Latin, it becomes as incomprehensible as Greek and the phrase it sounds like Greek to me and English greeking have the same semantic origin."
 }
