@@ -53,6 +53,9 @@ class ProductModel(TranslatableModel):
         return self.name
 
 
+# class ProductAdvantagesModel(TranslatableModel)
+
+
 
 class ServiceModel(TranslatableModel):
     """ Модель списка услуг """
