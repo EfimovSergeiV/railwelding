@@ -72,7 +72,13 @@ export default {
     ],
     lazy: true,
     langDir: 'lang/',
-    defaultLocale: 'en',
+    // skipSettingLocaleOnNavigate: true,
+    // defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    }
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -2,6 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.generics import ListAPIView
 
+from django.utils.translation import get_language_from_request
+
 from .models import (
     CategoryModel,
     ProductModel,
@@ -18,7 +20,7 @@ class CategoryView(APIView):
     serializer_class = CategorySerializer
 
     def get(self, request):
-        qs_category = self.queryset.all()
+        qs_category = CategoryModel.objects.all()
 
         for qs in qs_category:
             print(qs)
@@ -35,6 +37,10 @@ class ProductView(APIView):
     serializer_class = ProductSerializer
 
     def get(self, request):
+
+        lang_code = get_language_from_request(request)
+        print(lang_code)
+
         qs_product = self.queryset.get(id=1)
         serializer = self.serializer_class(qs_product, context={'request': request})
         product = serializer.data

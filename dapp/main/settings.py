@@ -127,9 +127,9 @@ USE_TZ = True
 
 PARLER_LANGUAGES = {
     None: (
-        {'code': 'ru-RU',},
-        {'code': 'en-US',},
-        {'code': 'de-DE',},
+        {'code': 'ru',},
+        {'code': 'en',},
+        {'code': 'de',},
     ),
     'default': {
         'fallbacks': ['en'],          # defaults to PARLER_DEFAULT_LANGUAGE_CODE
@@ -155,7 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CKEDITOR_CONFIGS = {
     'default': {
         # 'toolbar': 'fill',
-        'height': 300,
+        'height': 200,
         'width': 'fill',
     },
 }
