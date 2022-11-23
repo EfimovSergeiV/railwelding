@@ -18,6 +18,9 @@ class CategoryAdmin(TranslatableAdmin, DraggableMPTTAdmin):
 
     list_display = ('tree_actions', 'indented_title', 'activated',)
     list_editable = ('activated',)
+    fieldsets = (
+        (None, {'fields': (('parent','activated'),('name', 'slug',),)}),
+    )
 
     def get_prepopulated_fields(self, request, obj=None):
         return {'slug': ('name',)}
@@ -32,7 +35,11 @@ class ProductAdmin(TranslatableAdmin):
     form = ProductForm
 
     list_display = ('id', 'name', 'activated')
+    list_display_links = ('id', 'name',)
     list_editable = ('activated',)
+    search_fields = ('id', 'name',)
+    list_filter = ('activated',)
+    ordering = ('id',)
     fieldsets = (
         (None, {'fields': (('name', 'priority', 'activated'),)}),
         (None, {'fields': ('description',)}),
@@ -48,15 +55,16 @@ class ServiceAdmin(TranslatableAdmin):
     form = ServiceForm
 
     list_display = ('id', 'name', 'activated',)
+    list_display_links = ('id', 'name',)
     list_editable = ('activated',)
+    search_fields = ('id', 'name',)
+    list_filter = ('activated',)
+    ordering = ('id',)
     fieldsets = (
         (None, {'fields': (('name', 'priority', 'activated'))}),
         (None, {'fields': ('description',)}),
     )
 
-admin.site.register(
-    CategoryModel, 
-    CategoryAdmin
-)
+admin.site.register(CategoryModel, CategoryAdmin)
 admin.site.register(ProductModel, ProductAdmin)
 admin.site.register(ServiceModel, ServiceAdmin)
