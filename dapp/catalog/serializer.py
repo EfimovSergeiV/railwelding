@@ -10,11 +10,11 @@ from .models import (
 
 class CategorySerializer(TranslatableModelSerializer):
     """ Сериализатор категорий """
-    translations = TranslatedFieldsField(shared_model=CategoryModel)
+    # translations = TranslatedFieldsField(shared_model=CategoryModel)
     
     class Meta:
         model = CategoryModel
-        fields = ('translations',)
+        fields = '__all__'  #('translations',)
 
 
 class ProductSerializer(TranslatableModelSerializer):

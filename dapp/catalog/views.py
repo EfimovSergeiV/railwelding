@@ -18,7 +18,11 @@ class CategoryView(APIView):
     serializer_class = CategorySerializer
 
     def get(self, request):
-        qs_category = self.queryset
+        qs_category = self.queryset.all()
+
+        for qs in qs_category:
+            print(qs)
+
         serializer = self.serializer_class(qs_category, context={'request': request})
         categories = serializer.data
         return Response(categories)
