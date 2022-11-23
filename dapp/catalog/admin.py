@@ -16,6 +16,9 @@ class CategoryAdminForm(MPTTAdminForm, TranslatableModelForm):
 class CategoryAdmin(TranslatableAdmin, DraggableMPTTAdmin):
     form = CategoryAdminForm
 
+    list_display = ('tree_actions', 'indented_title', 'activated',)
+    list_editable = ('activated',)
+
     def get_prepopulated_fields(self, request, obj=None):
         return {'slug': ('name',)}
 

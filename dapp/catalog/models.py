@@ -14,10 +14,10 @@ class CategoryModel(MPTTModel, TranslatableModel):
     activated = models.BooleanField(verbose_name="Активирован", default=False)
     priority = models.IntegerField(verbose_name="Приоритет выдачи", default=50)
     parent = TreeForeignKey('self', verbose_name="Вложенность", on_delete=models.CASCADE, null=True, blank=True, related_name="children")
+    slug = models.SlugField(blank=False, default='', max_length=300)
 
     translations = TranslatedFields(
         name = models.CharField(verbose_name="Наименование", max_length=300),
-        slug = models.SlugField(blank=False, default='', max_length=300)
     )
 
     class Meta:
