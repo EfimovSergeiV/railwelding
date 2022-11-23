@@ -38,7 +38,7 @@ class ProductModel(TranslatableModel):
 
     activated = models.BooleanField(verbose_name="Активирован", default=False)
     priority = models.IntegerField(verbose_name="Приоритет выдачи", default=50)
-    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, related_name="category")
+    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, related_name="product_category")
 
     translations = TranslatedFields(
         name = models.CharField(verbose_name="Наименование", max_length=300),
@@ -59,6 +59,7 @@ class ServiceModel(TranslatableModel):
 
     activated = models.BooleanField(verbose_name="Активирован", default=False)
     priority = models.IntegerField(verbose_name="Приоритет выдачи", default=50)
+    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, related_name="service_category")
 
     translations = TranslatedFields(
         name = models.CharField(verbose_name="Наименование", max_length=300),
