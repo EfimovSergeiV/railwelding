@@ -5,7 +5,8 @@
 
       <div class="flex justify-center items-center">
         <div class="text-center">
-          <p class="select-none">{{ $t('lorem_ipsum') }}</p>
+          <p class="select-none text-3xl">{{ about.title }}</p>
+          <p class="select-none" v-html="about.text"></p>
         </div>
       </div>
 
@@ -30,10 +31,16 @@
 <script>
 // import HeaderSection from '@/components/sections/HeaderSection.vue'
 
-export default {
-  name: 'IndexAboutSection',
-  components: {
-    // HeaderSection,
+  export default {
+    name: 'IndexAboutSection',
+    components: {
+      // HeaderSection,
+    },
+      props: {
+      about: {
+        type: Object,
+        default: Object,
+      },
+    },
   }
-}
 </script>

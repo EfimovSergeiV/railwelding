@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
     title: 'napp',
     meta: [
@@ -56,28 +57,35 @@ export default {
   ],
 
   i18n: {
+    nuxtI18nHead: true,
+    strategy: 'prefix_except_default',
+    defaultLocale: "en",    
     locales: [
       {
         code: 'de',
+        ico: 'de-DE',
         file: 'de-DE.json'
       },
       {
-        code: 'en',
-        file: 'en-US.json'
+        code: 'ru',
+        ico: 'ru-RU',
+        file: 'ru-RU.json'
       },
       {
-        code: 'ru',
-        file: 'ru-RU.json'
-      }
+        code: 'en',
+        ico: 'en-US',
+        file: 'en-US.json'
+      },
     ],
     lazy: true,
-    langDir: 'lang/',
-    // skipSettingLocaleOnNavigate: true,
-    // defaultLocale: 'en',
+    langDir: "lang/",
+    baseUrl: 'https://my-nuxt-app.com',
+    skipSettingLocaleOnNavigate: false,
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
+      cookieKey: "i18n_redirected",
+      alwaysRedirect: false,
+      fallbackLocale: "en"
     }
   },
 

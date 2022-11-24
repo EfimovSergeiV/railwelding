@@ -1,9 +1,12 @@
 <template>
   <div class="">
+    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+    <nuxt-link :to="switchLocalePath('de')">Deutsch</nuxt-link>
+    <nuxt-link :to="switchLocalePath('ru')">Русский</nuxt-link>
     <HeaderSection />
     <MainSliderSection />
     <FirstSection />
-    <IndexAboutSection />
+    <IndexAboutSection :about="about" />
     <ContactDriver />
     <FooterSection />
   </div>
@@ -27,6 +30,11 @@ export default {
     IndexAboutSection,
     ContactDriver,
     FooterSection,
-  }
+  },
+  async asyncData({ $axios }) {
+      const about = await $axios.$get('con/about/')
+
+      return { about }
+    },
 }
 </script>
