@@ -32,9 +32,9 @@ export default {
     FooterSection,
   },
   async asyncData({ $axios }) {
-      const about = await $axios.$get('con/about/')
+    const about = await $axios.$get('con/about/')
 
-      return { about }
-    },
+    return { about }
+  },
 }
 </script>
