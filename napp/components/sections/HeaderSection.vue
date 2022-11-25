@@ -2,7 +2,7 @@
   <div class="">
 
     <div class="bg-slate-700">
-      <div class="h-3 bg-main-light" style="box-shadow: 0px 5px 5px #00000095;"></div>
+      <div class="h-3 bg-main-primary" style="box-shadow: 0px 5px 5px #00000095;"></div>
       <div class="py-2 container mx-auto px-4">
         <div class="flex justify-between">
           <div class="">
