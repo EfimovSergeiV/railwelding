@@ -4,8 +4,9 @@
 // })
 
 export const state = () => ({
-    locale: { "code": "en", "ico": "en-US", "file": "en-US.json" },
-    local: 'en'
+  // locale: { "code": "en", "ico": "en-US", "file": "en-US.json" },
+  locale: null,
+  local: null
   });
   
   export const mutations = {

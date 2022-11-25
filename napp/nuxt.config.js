@@ -62,7 +62,7 @@ export default {
   i18n: {
     nuxtI18nHead: true,
     strategy: 'prefix_except_default',
-    defaultLocale: "en",    
+    // defaultLocale: "ru",    
     locales: [
       {
         code: 'de',
@@ -82,8 +82,8 @@ export default {
     ],
     lazy: true,
     langDir: "lang/",
-    baseUrl: 'https://my-nuxt-app.com',
-    skipSettingLocaleOnNavigate: false,
+    // baseUrl: 'https://my-nuxt-app.com',
+    // skipSettingLocaleOnNavigate: false,
     detectBrowserLanguage: {
       // alwaysRedirect: false,
       // fallbackLocale: '',
@@ -97,7 +97,7 @@ export default {
       useCookie: true,
       cookieKey: "i18n_redirected",
       alwaysRedirect: false,
-      fallbackLocale: "en",
+      // fallbackLocale: "en",
       redirectOn: 'root',
     }
   },
