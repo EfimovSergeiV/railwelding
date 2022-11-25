@@ -56,7 +56,7 @@ class ProductAdmin(TranslatableAdmin):
     list_filter = ('activated',)
     ordering = ('id',)
     fieldsets = (
-        (None, {'fields': (('name', 'priority', 'activated'),('description',),)}),
+        (None, {'fields': (('category',), ('name', 'priority', 'activated'), ('description',),)}),
     )
     inlines = (
         ProductAdvantagesInlines,
@@ -79,7 +79,7 @@ class ServiceAdmin(TranslatableAdmin):
     list_filter = ('activated',)
     ordering = ('id',)
     fieldsets = (
-        (None, {'fields': (('name', 'priority', 'activated'),('description',),)}),
+        (None, {'fields': (('category',), ('name', 'priority', 'activated'), ('description',),)}),
     )
 
 admin.site.register(CategoryModel, CategoryAdmin)
