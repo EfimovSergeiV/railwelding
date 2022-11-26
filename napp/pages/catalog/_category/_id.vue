@@ -1,16 +1,27 @@
 <template>
-    <div class="">
-      <p>Category with Name and ID</p>
-    </div>
-  </template>
+  <div class="">
+    <HeaderSection />
+    <ProductSection :product="product" />
+    <FooterSection />
+  </div>
+</template>
   
   <script>
-  // import HeaderSection from '@/components/sections/HeaderSection.vue'
+  import HeaderSection from '~/components/sections/HeaderSection.vue';
+  import ProductSection from '~/components/sections/ProductSection.vue';
+  import FooterSection from '~/components/sections/FooterSection.vue';
   
   export default {
     name: 'CatalogPagea',
     components: {
-      // HeaderSection,
-    }
+      HeaderSection,
+      ProductSection,
+      FooterSection,
+    },
+    async asyncData({ $axios }) {
+      const product = await $axios.$get('c/product/')
+
+      return { product }
+    },
   }
   </script>

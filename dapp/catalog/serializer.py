@@ -4,6 +4,8 @@ from parler_rest.fields import TranslatedFieldsField
 from .models import (
     CategoryModel,
     ProductModel,
+    ProductAdvantagesModel,
+    ProductPropertiesModel,
 )
 
 
@@ -17,10 +19,25 @@ class CategorySerializer(TranslatableModelSerializer):
         fields = ('translations',)
 
 
+class ProductAdvantagesInline(TranslatableModelSerializer):
+    """ Вложенные поля преимуществ товара """
+
+    class Meta:
+        model = ProductAdvantagesModel
+        fields = ('styles', 'product', 'text',)
+
+class ProductPropertiesInline(TranslatableModelSerializer):
+    """ Вложенные поля свойств товара """
+
+    class Meta:
+        model = ProductPropertiesModel
+        fields = ('styles', 'text', 'value',)
+
 class ProductSerializer(TranslatableModelSerializer):
     """ Сериализатор товаров """
-    translations = TranslatedFieldsField(shared_model=ProductModel)
-    
+    advantages_product = ProductAdvantagesInline(many=True)
+    properties_product = ProductPropertiesInline(many=True)
+
     class Meta:
         model = ProductModel
-        fields = ('id', 'translations',)
+        fields = ('id', 'name', 'description', 'advantages_product', 'properties_product')
