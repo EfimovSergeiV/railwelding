@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg-gradient-to-r from-white to-gray-200 text-main-dark">
+  <div class="bg-gradient-to-r from-white to-gray-100 text-main-dark">
 
     <transition name="fade" mode="out-in">
       <Nuxt id="page" />
