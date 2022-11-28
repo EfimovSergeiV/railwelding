@@ -74,13 +74,13 @@
               <button class="">{{ $t('feature') }}</button>
             </div>
 
-            <div class="">
+            <!-- <div class="">
               <div class="">
                 <p v-html="product.description"></p>
               </div>
-            </div>
+            </div> -->
 
-            <!-- <div class="">
+            <div class="">
               <div v-for="properties in product.properties_product" :key="properties.id">
                 <div class="">
                   <div :class="`${properties.styles} flex justify-between py-1`" style="">
@@ -90,7 +90,7 @@
                 </div>
                 
               </div>
-            </div> -->
+            </div>
 
             <div class="my-6">
               <p>{{ $t('advantage') }}:</p>
@@ -140,8 +140,11 @@ import {
 </script>
 
 <style scoped>
-.border-sec {
+.prop-line {
   border-color: #ababab;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
+}
+.property-collection {
+  margin-top: 8px;
 }
 </style>

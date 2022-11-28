@@ -39,7 +39,7 @@ class ProductView(APIView):
     def get(self, request):
 
         lang = get_language_from_request(request)
-        qs_product = self.queryset.language(lang).get(id=1)
+        qs_product = self.queryset.language(lang).get(id=2)
         serializer = self.serializer_class(qs_product, context={'request': request})
         product = serializer.data
 
