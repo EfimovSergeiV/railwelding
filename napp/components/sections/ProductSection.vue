@@ -14,7 +14,7 @@
 
       <div class="">
 
-        <div class="flex gap-2 items-center">
+        <!-- <div class="flex gap-2 items-center">
           
           <div class="">
             <div class="w-28">
@@ -26,13 +26,20 @@
             <p class="">{{ product.name }}</p>
           </div>
         
-        </div>
+        </div> -->
 
 
-        <div class="flex gap-4">
+        <div class="flex gap-8">
 
-          <div class="grid gap-4">
-            <div>
+          <div class="flex flex-col gap-8">
+
+            <div class="bg-main-primary my-4">
+              <div class="px-2 py-4">
+                <nuxt-link to="#" class="text-gray-300">Мобильный рельсосварочный комплекс на комбинированном ходу</nuxt-link>
+              </div>
+            </div>
+
+            <div class="">
               <hooper
                 :center-mode="true"
                 :wheel-control="false"
@@ -52,8 +59,9 @@
                 
                 <hooper-navigation slot="hooper-addons"></hooper-navigation>
                 <hooper-pagination slot="hooper-addons"></hooper-pagination>
-              </hooper>
+              </hooper>              
             </div>
+
             <div class="">
               <iframe 
                 width="340" 
@@ -64,14 +72,32 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
               </iframe>
-            </div>
+            </div>              
           </div>
 
           <div class="">
 
-            <div class="flex gap-4 my-4">
-              <button class="">{{ $t('description') }}</button>
-              <button class="">{{ $t('feature') }}</button>
+            <div class="flex gap-2 items-center my-4">
+          
+              <div class="">
+                <div class="w-28">
+                  <img src="~/assets/css/images/weldmashine.png" />
+                </div>
+              </div>
+              
+              <div class="">
+                <p class="">{{ product.name }}</p>
+              </div>
+            
+            </div>
+
+
+
+            <div class="mb-1 bg-main-primary">
+              <div class="flex gap-4 px-2 py-3">
+                <button class="text-gray-300">{{ $t('description') }}</button>
+                <button class="text-gray-300">{{ $t('feature') }}</button>                
+              </div>
             </div>
 
             <!-- <div class="">
