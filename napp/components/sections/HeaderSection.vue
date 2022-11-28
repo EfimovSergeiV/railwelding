@@ -23,7 +23,7 @@
     <div class="container mx-auto px-4 my-10">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
-          <nuxt-link :to="localePath('index')">
+          <nuxt-link :to="localePath({name: 'index'})">
             <img src="~/assets/css/images/railwelding-logo.png" width="220" />
           </nuxt-link>        
         </div>

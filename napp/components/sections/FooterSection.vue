@@ -6,11 +6,13 @@
       <div class="py-4 px-4">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <img src="~/assets/css/images/railwelding-white.png" width="200" />
+            <nuxt-link :to="localePath({ name: 'index' })" class="">
+              <img src="~/assets/css/images/railwelding-white.png" width="200" />
+            </nuxt-link>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+                  <h2 class="mb-6 text-sm font-semibold uppercase text-white bg-main-primary">Resources</h2>
                   <ul class="">
                       <li class="mb-4">
                           <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>

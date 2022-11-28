@@ -28,16 +28,81 @@
         
         </div> -->
 
+        <div class="flex gap-8">
+          <div class="">
+            <div class="w-[340px] h-full bg-main-primary">
+              <div class="flex items-center px-2 h-full">
+                <nuxt-link to="#" class="text-gray-300">Мобильный рельсосварочный комплекс на комбинированном ходу</nuxt-link>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div class="flex justify-between items-center">
+              <div class="">
+                <div class="flex gap-2 items-center my-4">
+              
+                  <div class="">
+                    <div class="w-28">
+                      <img src="~/assets/css/images/weldmashine.png" />
+                    </div>
+                  </div>
+                  
+                  <div class="">
+                    <p class="">{{ product.name }}</p>
+                  </div>
+                
+                </div>  
+              </div>
+              <div class="">
+                <button class="px-10 py-2.5 text-white bg-main-secondary shadow-sm transition duration-500 ease-in-out">ЗАКАЗАТЬ</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="flex justify-between">
+            <div class="w-full">
+              <div class="">
+                <div class="flex gap-2 items-center my-4">
+              
+                  <div class="">
+                    <div class="w-28">
+                      <img src="~/assets/css/images/weldmashine.png" />
+                    </div>
+                  </div>
+                  
+                  <div class="">
+                    <p class="">{{ product.name }}</p>
+                  </div>
+                
+                </div>                
+              </div>
+
+
+            </div>
+
+              <div class="">
+
+                <button class="">
+                  Заказать
+                </button>
+
+              </div>
+
+
+          </div> -->
+        </div>
+
+
 
         <div class="flex gap-8">
 
           <div class="flex flex-col gap-8">
 
-            <div class="bg-main-primary my-4">
+            <!-- <div class="bg-main-primary my-4">
               <div class="px-2 py-4">
                 <nuxt-link to="#" class="text-gray-300">Мобильный рельсосварочный комплекс на комбинированном ходу</nuxt-link>
               </div>
-            </div>
+            </div> -->
 
             <div class="">
               <hooper
@@ -77,7 +142,7 @@
 
           <div class="">
 
-            <div class="flex gap-2 items-center my-4">
+            <!-- <div class="flex gap-2 items-center my-4">
           
               <div class="">
                 <div class="w-28">
@@ -89,13 +154,13 @@
                 <p class="">{{ product.name }}</p>
               </div>
             
-            </div>
+            </div> -->
 
 
 
             <div class="mb-1 bg-main-primary">
               <div class="flex gap-4 px-2 py-3">
-                <button class="text-gray-300">{{ $t('description') }}</button>
+                <button class="text-gray-100 underline">{{ $t('description') }}</button>
                 <button class="text-gray-300">{{ $t('feature') }}</button>                
               </div>
             </div>
@@ -119,9 +184,9 @@
             </div>
 
             <div class="my-6">
-              <p>{{ $t('advantage') }}:</p>
+              <p class="text-xl">{{ $t('advantage') }}:</p>
               <div v-for="advantage in product.advantages_product" :key="advantage.id" class="my-1">
-                <p class="mdi mdi-card-plus-outline"> {{ advantage.text }}</p>
+                <p class="mdi mdi-circle-multiple-outline text-lg"> {{ advantage.text }}</p>
               </div>
             </div>
 
