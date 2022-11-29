@@ -5,7 +5,7 @@
       :wheel-control="false"
       :auto-play="false"
       :play-speed="7000"
-      style="width: 100%; height: 360px;"
+      style="width: 100%; height: 460px;"
       class="main-hooper z-10"
     >
       <slide v-for="i in 10" :key="i" class="">
