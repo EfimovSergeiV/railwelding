@@ -1,5 +1,5 @@
 <template>
-  <section id="services-section" class="my-10 py-10 bg-main-primary text-gray-300">
+  <section id="services-section" class="h-screen bg-main-primary text-gray-300">
     <div class="container mx-auto px-4">
       
       
@@ -10,40 +10,36 @@
       </div>
 
 
-      <div class="flex items-center my-6">
-        <div class="">
-          <p class="text-3xl text-center">TRADE IN</p>
-          <div class="">
-            <p>
-              {{ tradein }}
-            </p>
+      <div class="flex justify-center items-center my-6 gap-8">
+        <div class="w-3/5">
+          <p class="text-5xl text-right">TRADE IN</p>
+          <div class="mt-4">
+            <p class="text-lg text-right" v-html="tradein"></p>
           </div>          
         </div>
-        <div class=""><img src="~/assets/css/images/tradein.png" width="300" /></div>
+        <img src="~/assets/css/images/tradein.png" width="200" />
       </div>
 
-      <div class="flex items-center my-6">
-        <div class=""><img src="~/assets/css/images/repair.png" width="300" /></div>
+      <div class="flex justify-center items-center my-6 gap-8">
+        <img src="~/assets/css/images/repair.png" width="200" />
         <div class="">
-          <p class="text-3xl text-center">REPAIR AND UPGRADE</p>
+          <p class="text-6xl text-center">REPAIR AND UPGRADE</p>
           <div class="">
-            <p>
+            <p class="text-xl">
               {{ repair }}
             </p>
           </div>          
         </div>
       </div>
 
-      <div class="flex items-center my-6">
+      <div class="flex justify-center items-center my-6 gap-8">
         <div class="">
-          <p class="text-3xl text-center">SERVICE MAINTENANCE</p>
+          <p class="text-5xl text-left">SERVICE MAINTENANCE</p>
           <div class="">
-            <p>
-              {{ service }}
-            </p>
+            <p class="text-lg" v-html="service"></p>
           </div>          
         </div>
-        <div class=""><img src="~/assets/css/images/service.png" width="300" /></div>
+        <img src="~/assets/css/images/service.png" width="200" />
       </div>
 
       <!-- <div class="flex justify-end items-center my-6">
@@ -79,9 +75,9 @@
     },
     data() {
       return {
-        tradein: "Is your welding equipment outworn no longer meeting modern requirements?Technosvar technology centre can accept your outworn equipment in payment for new or fully repaired machines! Exchanging your used equipment for new machines saves your money preserving efficiency and quality.",
+        tradein: "Is your welding equipment outworn no longer meeting modern requirements?<br />Our technology centre can accept your outworn equipment in payment for new <br />or fully repaired machines! Exchanging your used equipment for new machines saves your money preserving efficiency and quality.",
         repair: "We are ready to completely repair used welding machines and improve their specifications",
-        service: "We are ready to completely repair used welding machines and improve their specifications Welding machines require regular service – just like any other complex equipment. Our technology centre offers qualified maintenance service for any equipment produced by us or any other manufacturer."
+        service: "We are ready to completely repair used welding machines <br /> and improve their specifications Welding machines require regular service – just like any other complex equipment.<br /> Our technology centre offers qualified maintenance service for any equipment produced by us or any other manufacturer."
       }
     },
   }

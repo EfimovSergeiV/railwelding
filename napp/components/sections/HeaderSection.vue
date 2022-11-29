@@ -38,8 +38,8 @@
               <div class="">
                 <div class="bg-main-primary p-4">
                   <div class="columns-1">
-                    <div class="" v-for="category in categories" :key="category.id">
-                      <p class="text-lg text-gray-300 my-3">{{ category.name }}</p>
+                    <div class="my-3" v-for="category in categories" :key="category.id">
+                      <nuxt-link :to="localePath({name: 'catalog-category', params: { category: 'welding' }})" class="text-lg text-gray-300 my-3">{{ category.name }}</nuxt-link>
                     </div>
                   </div>
                 </div>

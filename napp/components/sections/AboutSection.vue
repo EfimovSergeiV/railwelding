@@ -1,5 +1,5 @@
 <template>
-  <section id="about-section" class="my-10">
+  <section id="about-section" class="h-screen">
     <div class="container mx-auto px-4">
 
       <div class="flex justify-center items-center my-6">
