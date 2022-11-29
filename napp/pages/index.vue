@@ -2,8 +2,8 @@
   <div class="">
     <HeaderSection />
     <MainSliderSection />
-    <FirstSection />
-    <IndexAboutSection :about="about" />
+    <ServicesSection />
+    <AboutSection />
     <ContactDriver />
     <FooterSection />
   </div>
@@ -13,8 +13,8 @@
 <script>
 import HeaderSection from '@/components/sections/HeaderSection.vue'
 import MainSliderSection from '~/components/sections/MainSliderSection.vue'
-import FirstSection from '@/components/sections/FirstSection.vue'
-import IndexAboutSection from '@/components/sections/IndexAbout.vue'
+import ServicesSection from '@/components/sections/ServicesSection.vue'
+import AboutSection from '@/components/sections/AboutSection.vue'
 import ContactDriver from '@/components/ContactDriwer.vue'
 import FooterSection from '@/components/sections/FooterSection.vue'
 
@@ -23,8 +23,8 @@ export default {
   components: {
     HeaderSection,
     MainSliderSection,
-    FirstSection,
-    IndexAboutSection,
+    ServicesSection,
+    AboutSection,
     ContactDriver,
     FooterSection,
   },

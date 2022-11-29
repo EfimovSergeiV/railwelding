@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="z-10">
     <hooper
       :center-mode="true"
       :wheel-control="false"
       :auto-play="false"
       :play-speed="7000"
       style="width: 100%; height: 360px;"
-      class="main-hooper"
+      class="main-hooper z-10"
     >
       <slide v-for="i in 10" :key="i" class="">
         <img
           src="https://www.hollandco.com/images/MOW/Slider/LaserWelder.jpg"
           style="width: 100%;"
-          class="rounded-sm"
+          class="rounded-sm z-10"
           @error="src='error.png'"
         />
       </slide>

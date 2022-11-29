@@ -186,7 +186,7 @@
             <div class="my-6">
               <p class="text-xl">{{ $t('advantage') }}:</p>
               <div v-for="advantage in product.advantages_product" :key="advantage.id" class="my-1">
-                <p class="mdi mdi-circle-multiple-outline text-lg"> {{ advantage.text }}</p>
+                <p class="mdi mdi-circle-outline text-lg"> {{ advantage.text }}</p>
               </div>
             </div>
 

@@ -20,7 +20,7 @@
     </div>
 
     
-    <div class="container mx-auto px-4 my-10">
+    <div class="container mx-auto px-4 my-10 relative">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
           <nuxt-link :to="localePath({name: 'index'})">
@@ -30,9 +30,28 @@
         
         <div class="flex items-center gap-6">
           <div class=""><nuxt-link :to="localePath({ name: 'index' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('home') }}</nuxt-link></div>
-          <div class=""><nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link></div>
+          
+          <div class="group">
+            <nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link>
+            <div class="absolute z-50 invisible group-hover:visible">
+
+              <div class="">
+                <div class="bg-main-primary p-4">
+                  <div class="columns-1">
+                    <div class="" v-for="category in categories" :key="category.id">
+                      <p class="text-lg text-gray-300 my-3">{{ category.name }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
           <div class=""><nuxt-link :to="localePath({ name: 'services'})" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
-          <div class=""><nuxt-link :to="localePath({ name: 'about' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
+          <div class=""><nuxt-link to="#about-section" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
           <div class=""><button :to="localePath({ name: 'about' })" class="text-xl bg-main-info px-3 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">{{ $t('contact_us') }}</button></div>
         </div> 
       </div>
@@ -50,6 +69,14 @@
     data() {
       return {
         locale: this.$i18n.locale,
+        categories: [
+          { id: 1, name: 'Стационарные рельсосварочные машины' },
+          { id: 2, name: 'Мобильные рельсосварочные машины' },
+          { id: 3, name: 'Мобильный рельсосварочный комплекс' },
+          { id: 4, name: 'Мобильный рельсосварочный комплекс на комбинированном ходу' },
+          { id: 5, name: 'Пресс для испытания сварных соединений' },
+          { id: 6, name: 'Запасные части для рельсосварочного оборудования' },
+        ]
       }
     },
     watch: {
