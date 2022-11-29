@@ -50,7 +50,7 @@
 
 
 
-          <div class=""><nuxt-link :to="localePath({ name: 'services'})" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
+          <div class=""><nuxt-link to="#services-section" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
           <div class=""><nuxt-link to="#about-section" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
           <div class=""><button :to="localePath({ name: 'about' })" class="text-xl bg-main-info px-3 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">{{ $t('contact_us') }}</button></div>
         </div> 

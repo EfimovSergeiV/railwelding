@@ -1,14 +1,13 @@
 <template>
-  <section id="services-section" class="h-screen bg-main-primary text-gray-300">
+  <section id="services-section" class="my-10 bg-main-primary text-gray-300">
     <div class="container mx-auto px-4">
       
       
-      <div class="flex justify-center items-center my-6">
+      <div class="flex justify-center items-center">
         <p class="text-6xl text-center">
           Our Services
         </p>          
       </div>
-
 
       <div class="flex justify-center items-center my-6 gap-8">
         <div class="w-3/5">
@@ -42,19 +41,6 @@
         <img src="~/assets/css/images/service.png" width="200" />
       </div>
 
-      <!-- <div class="flex justify-end items-center my-6">
-        <p class="text-3xl text-center">
-          REPAIR AND UPGRADE
-        </p>          
-      </div>
-
-      <div class="flex items-center my-6">
-        <p class="text-3xl text-center">
-          SERVICE MAINTENANCE
-        </p>          
-      </div>
-     -->
-    
     </div>
   </section>
 </template>
