@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.safestring import mark_safe
 from ckeditor.widgets import CKEditorWidget
 from mptt.admin import DraggableMPTTAdmin
 from mptt.forms import MPTTAdminForm
@@ -11,6 +12,7 @@ from catalog.models import (
     ServiceModel,
     ProductAdvantagesModel,
     ProductPropertiesModel,
+    ProductImageModel,
 )
 
 
@@ -41,14 +43,23 @@ class ProductPropertiesInlines(TranslatableTabularInline):
     model = ProductPropertiesModel
     extra = 0
 
+class ProductImageInline(admin.TabularInline):
+    model = ProductImageModel
+    extra = 0
+
 
 class ProductForm(TranslatableModelForm):
     description = TranslatedField(label='Описание', widget=CKEditorWidget())
 
 
 class ProductAdmin(TranslatableAdmin):
-    form = ProductForm
+    def preview_img(self, obj):
+        print(obj.preview)
+        return mark_safe('<img style="margin-right: -10vh" src="/files/%s" alt="Нет изображения" width="160" height="auto" />' % (obj.preview))
+    preview_img.short_description = 'Изображение'
 
+    form = ProductForm
+    readonly_fields = ('preview_img', )
     list_display = ('id', 'name', 'activated')
     list_display_links = ('id', 'name',)
     list_editable = ('activated',)
@@ -56,11 +67,12 @@ class ProductAdmin(TranslatableAdmin):
     list_filter = ('activated',)
     ordering = ('id',)
     fieldsets = (
-        (None, {'fields': (('category',), ('name', 'priority', 'activated'), ('description',),)}),
+        (None, {'fields': (('category',), ('name', 'priority', 'activated'), ('description',), ('preview_img', 'preview',))}),
     )
     inlines = (
         ProductAdvantagesInlines,
         ProductPropertiesInlines,
+        ProductImageInline,
     )
 
 

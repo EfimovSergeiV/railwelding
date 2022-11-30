@@ -7,6 +7,7 @@ from django.db import models
 from .managers import CategoryManager
 from mptt.models import MPTTModel, TreeForeignKey
 from parler.models import TranslatableModel, TranslatedFields
+from easy_thumbnails.fields import ThumbnailerImageField
 
 
 
@@ -41,6 +42,7 @@ class CategoryModel(MPTTModel, TranslatableModel):
 class ProductModel(TranslatableModel):
     """ Модель товара каталога """
 
+    preview = ThumbnailerImageField(verbose_name="Превью", resize_source=dict(size=(160, 124)), help_text="160x124", upload_to='images/preview/')
     activated = models.BooleanField(verbose_name="Активирован", default=False)
     priority = models.IntegerField(verbose_name="Приоритет выдачи", default=50)
     category = models.ForeignKey(CategoryModel, verbose_name="Категория", on_delete=models.CASCADE, related_name="product_category")
@@ -93,6 +95,18 @@ class ProductPropertiesModel(TranslatableModel):
 
     def __str__(self):
         return self.product.name
+
+
+class ProductImageModel(models.Model):
+    """ Изображение товара """
+
+    product = models.ForeignKey(ProductModel, verbose_name="Изображение", related_name='image_product', on_delete=models.CASCADE)
+    title = models.CharField(verbose_name="Подпись", max_length=200, null=True, blank=True)
+    image = models.ImageField(verbose_name="Изображения", upload_to='images/prod/')
+
+    class Meta:
+        verbose_name = "Изображение"
+        verbose_name_plural = "Изображения"
 
 
 

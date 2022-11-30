@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'ckeditor',
     "corsheaders",
     'rest_framework',
+    'easy_thumbnails',
     'catalog.apps.CatalogConfig',
     'content.apps.ContentConfig',
 ]
