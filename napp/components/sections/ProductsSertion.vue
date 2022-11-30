@@ -36,7 +36,7 @@
       <!-- <div class="flex justify-center items-center my-6 gap-8">
         <nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl bg-main-info px-20 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">More</nuxt-link>
       </div> -->
-      {{ products }}
+      <!-- {{ products }} -->
     
     </div>
   </section>
