@@ -40,4 +40,4 @@ class ProductSerializer(TranslatableModelSerializer):
 
     class Meta:
         model = ProductModel
-        fields = ('id', 'name', 'description', 'advantages_product', 'properties_product')
+        fields = ('id', 'name', 'description', 'preview', 'advantages_product', 'properties_product')

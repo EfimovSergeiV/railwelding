@@ -13,7 +13,7 @@
           <div class="" v-for="product in products" :key="product.id">
             <div class="flex gap-4">
               <div class="">
-                <img src="~/assets/css/images/prod/fbm-60.png" class=" w-40" />
+                <img :src="product.preview" class=" w-40" />
               </div>
               <div class="">
                 <div class="">
@@ -36,7 +36,7 @@
       <!-- <div class="flex justify-center items-center my-6 gap-8">
         <nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl bg-main-info px-20 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">More</nuxt-link>
       </div> -->
-
+      {{ products }}
     
     </div>
   </section>

@@ -64,7 +64,7 @@ class ProductAdvantagesModel(TranslatableModel):
     """ Модель преимуществ товаров """
 
     product = models.ForeignKey(ProductModel, on_delete=models.CASCADE, related_name="advantages_product")
-    styles = models.CharField(verbose_name="Стили", max_length=500, null=True, blank=True, help_text="Стили TailwindCSS, которые будут добавлены к классу (https://tailwindcss.com)", )
+    styles = models.CharField(verbose_name="Стили", max_length=500, null=True, blank=True, help_text="Стили TailwindCSS, которые будут добавлены к классу (https://tailwindcss.com)| prop-line (with line) or property-collection font-bold (without line)", )
 
     translations = TranslatedFields(
         text = models.CharField(verbose_name="Текст", max_length=1000)

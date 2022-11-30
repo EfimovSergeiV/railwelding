@@ -3,7 +3,7 @@
     <HeaderSection />
     <NavSection />
     <MainSliderSection />
-    <ProductsSection :products="[products,products,products,products,products,products,]" />
+    <ProductsSection :products="products" />
     <ServicesSection />
     <AboutSection />
     <ContactDriver />
@@ -36,8 +36,9 @@ export default {
     FooterSection,
   },
   async asyncData({ $axios }) {
-    const products = await $axios.$get('c/product/')
-    const about = await $axios.$get('con/about/')
+    const products = await $axios.$get('c/products/')
+    // const about = await $axios.$get('con/about/')
+    const about = []
 
     return { products, about }
   },

@@ -54,7 +54,6 @@ class ProductForm(TranslatableModelForm):
 
 class ProductAdmin(TranslatableAdmin):
     def preview_img(self, obj):
-        print(obj.preview)
         return mark_safe('<img style="margin-right: -10vh" src="/files/%s" alt="Нет изображения" width="160" height="auto" />' % (obj.preview))
     preview_img.short_description = 'Изображение'
 
