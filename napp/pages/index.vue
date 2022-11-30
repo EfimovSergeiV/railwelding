@@ -37,5 +37,11 @@ export default {
 
     return { products, about }
   },
+  // created () {
+  //   window.addEventListener('scroll', this.onScroll);
+  // },
+  // destroyed () {
+  //   window.removeEventListener('scroll', this.onScroll);
+  // },
 }
 </script>

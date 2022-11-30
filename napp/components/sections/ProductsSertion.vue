@@ -1,5 +1,5 @@
 <template>
-  <section id="products-section" class="py-10">
+  <section id="catalog-section" class="py-10">
     <div class="container mx-auto px-4">
       
       
@@ -13,17 +13,19 @@
           <div class="" v-for="product in products" :key="product.id">
             <div class="flex gap-4">
               <div class="">
-                <img src="~/assets/css/images/prod/fbm-60.png" width="160" />
+                <img src="~/assets/css/images/prod/fbm-60.png" class=" w-40" />
               </div>
               <div class="">
                 <div class="">
                   <p class="">{{ product.name }}</p>
+                  <p class="">Варианты размещения:</p>
+                  <p class="">Шасси авто / ЖД платформа</p>
                   <!-- <div>
                     <p class="text-xs" v-html="product.description"></p>
                   </div> -->
                 </div>
                 <div class="mt-2 text-right">
-                  <nuxt-link :to="localePath({name: 'catalog-category-id', params: { category: 'welding', id: 10}})" class="pt-2 text-xl bg-main-info px-20 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">Read more</nuxt-link>
+                  <nuxt-link :to="localePath({name: 'catalog-category-id', params: { category: 'welding', id: 10}})" class="pt-2 text-xl bg-main-info px-20 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">{{ $t('more')}}</nuxt-link>
                 </div>
               </div>
             </div>

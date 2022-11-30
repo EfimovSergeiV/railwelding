@@ -40,6 +40,12 @@ export default {
     '~/plugins/axios.js',
   ],
 
+  router: {
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 

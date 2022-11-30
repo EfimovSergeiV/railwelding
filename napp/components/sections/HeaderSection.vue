@@ -29,30 +29,11 @@
         </div>
         
         <div class="flex items-center gap-6">
-          <div class=""><nuxt-link :to="localePath({ name: 'index' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('home') }}</nuxt-link></div>
-          
-          <div class="group">
-            <nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link>
-            <div class="absolute z-50 invisible group-hover:visible">
-
-              <div class="">
-                <div class="bg-main-primary p-4">
-                  <div class="columns-1">
-                    <div class="my-3" v-for="category in categories" :key="category.id">
-                      <nuxt-link :to="localePath({name: 'catalog-category', params: { category: 'welding' }})" class="text-lg text-gray-300 my-3">{{ category.name }}</nuxt-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-
-
-          <div class=""><nuxt-link to="#services-section" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
-          <div class=""><nuxt-link to="#about-section" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
-          <div class=""><button :to="localePath({ name: 'about' })" class="text-xl bg-main-info px-3 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">{{ $t('contact_us') }}</button></div>
+          <!-- <div class=""><nuxt-link :to="localePath({ name: 'index' })" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('home') }}</nuxt-link></div>
+          <div class=""><nuxt-link :to="localePath({ name: 'index' }) + '#catalog-section'" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('catalog') }}</nuxt-link></div>
+          <div class=""><nuxt-link :to="localePath({ name: 'index' }) + '#services-section'" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('services') }}</nuxt-link></div>
+          <div class=""><nuxt-link :to="localePath({ name: 'index' }) + '#about-section'" class="text-xl text-main-dark hover:text-main-info transition duration-500 ease-in-out">{{ $t('about_us') }}</nuxt-link></div>
+          <div class=""><button class="text-xl bg-main-info px-3 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">{{ $t('contact_us') }}</button></div> -->
         </div> 
       </div>
     </div>
