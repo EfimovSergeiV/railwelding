@@ -5,8 +5,16 @@
 
       <div class="">
         
-        <div class="">
-
+        <div class="flex justify-between items-center my-16">
+          <div class="flex items-center">
+            <nuxt-link :to="localePath({name: 'index'})">
+              <img src="~/assets/css/images/railwelding-logo.png" width="220" />
+            </nuxt-link>        
+          </div>
+          
+          <div class="">
+            <nuxt-link :to="localePath({ name: 'index' })" class="to">Вернуться</nuxt-link>
+          </div> 
         </div>
 
       </div>
@@ -55,7 +63,7 @@
                 </div>  
               </div>
               <div class="">
-                <button class="px-10 py-2.5 text-white bg-main-secondary shadow-sm transition duration-500 ease-in-out">ЗАКАЗАТЬ</button>
+                <button class="bg-main-info px-14 py-2 text-white hover:bg-main-primary transition duration-500 ease-in-out">ЗАКАЗАТЬ</button>
               </div>
             </div>
           </div>

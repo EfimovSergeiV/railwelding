@@ -41,6 +41,19 @@ class ProductView(APIView):
         lang = get_language_from_request(request)
         qs_product = self.queryset.language(lang).get(id=2)
         serializer = self.serializer_class(qs_product, context={'request': request})
-        product = serializer.data
 
-        return Response(product)
+        return Response(serializer.data)
+
+
+class AllProductView(APIView):
+    """ Выдача всех товаров """
+
+    queryset = ProductModel.objects.filter(activated=True)
+    serializer_class = ProductSerializer
+
+    def get(self, request):
+        lang = get_language_from_request(request)
+        qs_products = self.queryset.language(lang).all()
+        serializer = self.serializer_class(qs_products, many=True, context={'request': request})
+
+        return Response(serializer.data)

@@ -18,10 +18,12 @@ from django.urls import path
 from .views import (
     CategoryView,
     ProductView,
+    AllProductView
 )
 
 
 urlpatterns = [
     path('categories/', CategoryView.as_view()),
     path('product/', ProductView.as_view()),
+    path('products/', AllProductView.as_view()),
 ]

@@ -1,7 +1,6 @@
 <template>
   <div class="">
     <HeaderSection />
-    <!-- <MainSliderSection /> -->
     <ProductSection :product="product" />
     <FooterSection />
   </div>
@@ -9,7 +8,6 @@
   
   <script>
   import HeaderSection from '~/components/sections/HeaderSection.vue';
-  // import MainSliderSection from '~/components/sections/MainSliderSection.vue';
   import ProductSection from '~/components/sections/ProductSection.vue';
   import FooterSection from '~/components/sections/FooterSection.vue';
   
@@ -17,7 +15,6 @@
     name: 'CatalogPage',
     components: {
       HeaderSection,
-      // MainSliderSection,
       ProductSection,
       FooterSection,
     },

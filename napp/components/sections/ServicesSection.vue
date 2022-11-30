@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <section id="services-section" class="my-10 py-10 bg-main-primary text-gray-300">
     <div class="container mx-auto px-4">
       
@@ -22,7 +23,7 @@
       <div class="flex justify-center items-center my-12 gap-8">
         <img src="~/assets/css/images/repair.png" width="200" />
         <div class="">
-          <p class="text-6xl text-left">REPAIR AND UPGRADE</p>
+          <p class="text-6xl text-center">REPAIR AND UPGRADE</p>
           <div class="">
             <p class="text-xl my-4">
               {{ repair }}
@@ -33,9 +34,9 @@
 
       <div class="flex justify-center items-center my-6 gap-8">
         <div class="">
-          <p class="text-5xl text-left">SERVICE MAINTENANCE</p>
+          <p class="text-5xl text-center">SERVICE MAINTENANCE</p>
           <div class="">
-            <p class="text-xl my-4" v-html="service"></p>
+            <p class="text-xl text-center my-4" v-html="service"></p>
           </div>          
         </div>
         <img src="~/assets/css/images/service.png" width="200" />
@@ -43,6 +44,7 @@
 
     </div>
   </section>
+  <!--eslint-enable-->
 </template>
 
 <script>
