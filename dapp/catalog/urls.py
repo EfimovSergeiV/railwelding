@@ -24,6 +24,6 @@ from .views import (
 
 urlpatterns = [
     path('categories/', CategoryView.as_view()),
-    path('product/', ProductView.as_view()),
+    path('product/<int:pk>/', ProductView.as_view()),
     path('products/', AllProductView.as_view()),
 ]

@@ -18,8 +18,8 @@
       ProductSection,
       FooterSection,
     },
-    async asyncData({ $axios }) {
-      const product = await $axios.$get('c/product/')
+    async asyncData({ $axios, params }) {
+      const product = await $axios.$get(`c/product/${params.id}`)
 
       return { product }
     },

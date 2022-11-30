@@ -36,10 +36,10 @@ class ProductView(APIView):
     queryset = ProductModel.objects.filter(activated=True)
     serializer_class = ProductSerializer
 
-    def get(self, request):
+    def get(self, request, pk):
 
         lang = get_language_from_request(request)
-        qs_product = self.queryset.language(lang).get(id=2)
+        qs_product = self.queryset.language(lang).get(id=pk)
         serializer = self.serializer_class(qs_product, context={'request': request})
 
         return Response(serializer.data)
