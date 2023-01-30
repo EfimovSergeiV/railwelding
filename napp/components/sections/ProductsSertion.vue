@@ -4,12 +4,12 @@
       
       
       <div class="flex justify-center items-center">
-        <p class="text-6xl text-center">
+        <p class="text-6xl text-center my-8">
           Our Products
         </p>          
       </div>
 
-        <div class="grid grid-cols-2 gap-4 my-10">
+        <!-- <div class="grid grid-cols-2 gap-4 my-10">
           <div class="p-2" v-for="product in products" :key="product.id">
 
             <div class="flex items-center gap-4 h-28">
@@ -30,7 +30,7 @@
 
           </div>
 
-        </div>
+        </div> -->
 
       <!-- <div class="flex justify-center items-center my-6 gap-8">
         <nuxt-link :to="localePath({ name: 'catalog' })" class="text-xl bg-main-info px-20 py-2 text-white font-bold hover:bg-main-primary transition duration-500 ease-in-out">More</nuxt-link>

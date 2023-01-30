@@ -1,12 +1,19 @@
 <template>
   <div class="">
     <HeaderSection />
-    <NavSection />
-    <MainSliderSection />
-    <ProductsSection :products="products" />
-    <ServicesSection />
+
+    <div class="my-40"></div>
+
+    <QuestSection />
     <AboutSection />
-    <ContactDriver />
+
+
+    <!-- <NavSection /> -->
+    <!-- <MainSliderSection /> -->
+    <!-- <ProductsSection :products="products" /> -->
+    <!-- <ServicesSection /> -->
+
+    <PartnerSection />
     <FooterSection />
   </div>
 
@@ -14,12 +21,14 @@
 
 <script>
 import HeaderSection from '@/components/sections/HeaderSection.vue'
-import NavSection from '~/components/sections/NavSection.vue'
-import MainSliderSection from '~/components/sections/MainSliderSection.vue'
-import ProductsSection from '@/components/sections/ProductsSertion.vue'
-import ServicesSection from '@/components/sections/ServicesSection.vue'
+import QuestSection from '~/components/sections/QuestSection.vue'
+// import NavSection from '~/components/sections/NavSection.vue'
+// import MainSliderSection from '~/components/sections/MainSliderSection.vue'
+// import ProductsSection from '@/components/sections/ProductsSertion.vue'
+// import ServicesSection from '@/components/sections/ServicesSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
-import ContactDriver from '@/components/ContactDriwer.vue'
+// import ContactDriver from '@/components/ContactDriwer.vue'
+import PartnerSection from '~/components/sections/PartnerSection.vue'
 import FooterSection from '@/components/sections/FooterSection.vue'
 
 export default {
@@ -27,12 +36,13 @@ export default {
   name: 'IndexPage',
   components: {
     HeaderSection,
-    NavSection,
-    MainSliderSection,
-    ProductsSection,
-    ServicesSection,
+    QuestSection,
+    // NavSection,
+    // MainSliderSection,
+    // ProductsSection,
+    // ServicesSection,
     AboutSection,
-    ContactDriver,
+    PartnerSection,
     FooterSection,
   },
   async asyncData({ $axios }) {
