@@ -20,7 +20,7 @@
 
           <div class="flex justify-between items-center px-8 pb-16 h-full">
             <div class="">
-              <p class="text-white text-4xl font-bold w-4/5 select-none">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+              <p class="text-white text-4xl font-semibold w-4/5 select-none">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
             </div>
             <div class="">
               <nuxt-link :to="localePath({name: 'index'})">

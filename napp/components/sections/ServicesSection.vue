@@ -1,6 +1,7 @@
 <template>
-  <footer class="mx-auto lg:max-w-7xl lg:px-8">
-    <div class="select-none py-8">
+  <div class="mx-auto lg:max-w-7xl lg:px-8">
+
+    <div class="select-none py-8 px-8 bg-white">
 
       <div class="grid grid-cols-3 gap-4">
         <div class="text-center">
@@ -18,7 +19,8 @@
       </div>
 
     </div>
-  </footer>
+
+  </div>
 </template>
   
   <script>

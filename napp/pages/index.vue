@@ -1,9 +1,6 @@
 <template>
   <div class="">
     <HeaderSection />
-
-    <div class="my-40"></div>
-
     
     <ServicesSection />
     <QuestSection />

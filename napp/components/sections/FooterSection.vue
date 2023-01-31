@@ -1,18 +1,18 @@
 <template>
   <footer class="mx-auto lg:max-w-7xl lg:px-8">
-    <div class="">
-      <div class="bg-main-primary">
 
-        <div class="flex items-center justify-center gap-4 py-2">
+    <div class="bg-main-primary px-8">
 
-          <img src="railwelding-qr.png" class="h-14" />
-          <a href="mailto:info@railwelding.com" class="text-white font-semibold text-lg">info@railwelding.com</a>
+      <div class="flex items-center justify-center gap-4 py-2">
 
-        </div>
-        
+        <img src="railwelding-qr.png" class="h-14" />
+        <a href="mailto:info@railwelding.com" class="text-white font-semibold text-lg">info@railwelding.com</a>
 
       </div>
+      
+
     </div>
+
   </footer>
 </template>
 

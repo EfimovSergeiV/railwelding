@@ -1,6 +1,6 @@
 <template>
   <footer class="mx-auto lg:max-w-7xl lg:px-8">
-    <div class="my-8 select-none">
+    <div class="py-8 px-8 select-none bg-white">
 
       
       <div class="flex items-center justify-center">

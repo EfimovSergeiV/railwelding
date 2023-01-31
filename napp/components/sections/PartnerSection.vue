@@ -1,10 +1,10 @@
 <template>
   <footer class="mx-auto lg:max-w-7xl lg:px-8">
-    <div class="select-none py-8">
+    <div class="select-none py-8 px-8 bg-white">
 
       <div class="flex justify-between">
         <div class="flex items-center">
-          <p class="text-3xl uppercase">Партнёры</p>
+          <p class="text-3xl uppercase">Partners</p>
         </div>
         <div class="">
           <div class="grid grid-cols-4 gap-4  place-items-center">
