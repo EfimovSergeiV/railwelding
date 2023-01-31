@@ -11,7 +11,7 @@
 
             <div class="grid grid-cols-1 gap-4">
               <div class="flex items-center justify-center">
-                <img src="partners/belrailswelding.png" class=" h-16"/>
+                <img src="partners/belrailswelding.png" class=" h-12"/>
               </div>
               <div class="flex items-center justify-center">
                 <p class="text-center">Belarusian railways</p>
@@ -20,7 +20,7 @@
 
             <div class="grid grid-cols-1 gap-4">
               <div class="flex items-center justify-center">
-                <img src="partners/kazakhrails.png" class=" h-16"/>
+                <img src="partners/kazakhrails.png" class=" h-12"/>
               </div>
               <div class="flex items-center justify-center">
                 <p class="text-center">Kazakh Railways</p>
@@ -29,7 +29,7 @@
 
             <div class="grid grid-cols-1 gap-4">
               <div class="flex items-center justify-center">
-                <img src="partners/latrails.png" class=" h-16"/>
+                <img src="partners/latrails.png" class=" h-12"/>
               </div>
               <div class="flex items-center justify-center">
                 <p class="text-center">Lithuanian Railways</p>
@@ -38,7 +38,7 @@
 
             <div class="grid grid-cols-1 gap-4">
               <div class="flex items-center justify-center">
-                <img src="partners/uzbekrails.png" class=" h-16"/>
+                <img src="partners/uzbekrails.png" class=" h-12"/>
               </div>
               <div class="flex items-center justify-center">
                 <p class="text-center">Ozbekiston temir yollari</p>     
@@ -57,7 +57,7 @@
 // import HeaderSection from '@/components/sections/HeaderSection.vue'
 
 export default {
-  name: 'QuestSection',
+  name: 'PartnerSection',
   components: {
     // HeaderSection,
   }

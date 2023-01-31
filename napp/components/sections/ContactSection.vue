@@ -3,16 +3,16 @@
     <div class="select-none py-8">
 
       <div class="grid grid-cols-3 gap-4">
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Обслуживание и устранение неполадок</p>
+        <div class="">
+          <p>Обслуживание и устранение неполадок</p>
           <p>{{ textOne }}</p>
         </div>
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Обучение и техническая поддержка</p>
+        <div class="">
+          <p>Обучение и техническая поддержка</p>
           <p>{{ textTwo }}</p>
         </div>
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Запасные части и комплектующие</p>
+        <div class="">
+          <p>Запасные части и комплектующие</p>
           <p>{{ textThird }}</p>
         </div>
       </div>
