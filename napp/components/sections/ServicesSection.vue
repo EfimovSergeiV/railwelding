@@ -5,7 +5,7 @@
       <div class="grid grid-cols-3 gap-4">
         <div class="text-center">
           <p class="text-xl py-2 font-semibold">Обслуживание и устранение неполадок</p>
-          <p>{{ textOne }}</p>
+          <p class="text-sm">{{ textOne }}</p>
         </div>
         <div class="text-center">
           <p class="text-xl py-2 font-semibold">Обучение и техническая поддержка</p>
