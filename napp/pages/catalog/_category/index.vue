@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <HeaderSection />
-    <MainSliderSection />
+    <!-- <HeaderSection />
+    <MainSliderSection /> -->
 
     <div class="my-20 container mx-auto">
       <div class="mx-4">
@@ -33,16 +33,16 @@
 
   
 <script>
-import HeaderSection from '~/components/sections/HeaderSection.vue';
-import MainSliderSection from '~/components/sections/MainSliderSection.vue';
-import FooterSection from '~/components/sections/FooterSection.vue';
+// import HeaderSection from '~/components/sections/HeaderSection.vue';
+// import MainSliderSection from '~/components/sections/MainSliderSection.vue';
+// import FooterSection from '~/components/sections/FooterSection.vue';
   
   export default {
     name: 'CatalogPage',
     components: {
-      HeaderSection,
-      MainSliderSection,
-      FooterSection,
+      // HeaderSection,
+      // MainSliderSection,
+      // FooterSection,
     }
   }
 </script>
