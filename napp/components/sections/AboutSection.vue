@@ -4,21 +4,21 @@
 
       
       <div class="flex items-center justify-center">
-        <p class="text-slate-800 uppercase text-xl font-bold">Компания Railwelding</p>
+        <p class="text-slate-900 uppercase text-xl font-bold">Компания Railwelding</p>
       </div>
 
       <div class="flex items-center justify-center px-10 py-2">
-        <p class="text-gray-700 text-center">{{ about }}</p>
+        <p class="text-slate-800 text-center">{{ about }}</p>
       </div>
 
 
-      
+
       <div class="flex items-center justify-center py-4 px-10">
-        <p class="text-gray-700 text-center">С нами вы можете быть уверены, что ваш процесс сварки рельсов будет проходить без задержек и неполадок!</p>
+        <p class="text-slate-800 text-center">С нами вы можете быть уверены, что ваш процесс сварки рельсов будет проходить без задержек и неполадок!</p>
       </div>
 
       <div class="flex items-center justify-center py-10">
-        <img src="logo.png" />
+        <img src="logo.png" class=" h-8"/>
       </div>
 
     </div>

@@ -17,7 +17,7 @@
               <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
             </div>
           
-            <p class="text-slate-800" v-html="service.text"></p>
+            <p class="text-slate-800 text-sm" v-html="service.text"></p>
           </div>
         </div>
 

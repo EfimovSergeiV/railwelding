@@ -1,13 +1,13 @@
 <template>
   <div class="mx-auto lg:max-w-7xl lg:px-8">
-
+<!-- 
     <div class="select-none py-8 px-8 bg-white">
 
       <div class="grid grid-cols-2 gap-4">
         <p>this is contacts</p>
       </div>
 
-    </div>
+    </div> -->
   </div>
 </template>
   
