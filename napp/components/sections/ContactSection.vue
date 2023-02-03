@@ -1,24 +1,14 @@
 <template>
-  <footer class="mx-auto lg:max-w-7xl lg:px-8">
-    <div class="select-none py-8">
+  <div class="mx-auto lg:max-w-7xl lg:px-8">
 
-      <div class="grid grid-cols-3 gap-4">
-        <div class="">
-          <p>Обслуживание и устранение неполадок</p>
-          <p>{{ textOne }}</p>
-        </div>
-        <div class="">
-          <p>Обучение и техническая поддержка</p>
-          <p>{{ textTwo }}</p>
-        </div>
-        <div class="">
-          <p>Запасные части и комплектующие</p>
-          <p>{{ textThird }}</p>
-        </div>
+    <div class="select-none py-8 px-8 bg-white">
+
+      <div class="grid grid-cols-2 gap-4">
+        <p>this is contacts</p>
       </div>
 
     </div>
-  </footer>
+  </div>
 </template>
   
   <script>

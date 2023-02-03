@@ -7,7 +7,7 @@
           <div class="absolute w-full h-full">
 
             <div class="flex items-center justify-center h-full">
-              <div class="grid grid-cols-1 gap-2">
+              <div class="grid grid-cols-1 gap-2 px-4">
                 <p class="text-3xl text-white font-semibold uppercase">Ищете надежное и эффективное решение для сварки рельсов?</p>
                 <p class="text-2xl text-white font-semibold uppercase">У нас есть идеальное предложение для вас!</p>                
               </div>

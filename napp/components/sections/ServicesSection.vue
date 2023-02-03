@@ -3,19 +3,24 @@
 
     <div class="select-none py-8 px-8 bg-white">
 
-      <div class="grid grid-cols-3 gap-4">
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Обслуживание и устранение неполадок</p>
-          <p class="text-sm">{{ textOne }}</p>
+      <div class="flex justify-center items-center">
+        <p class="mb-4 text-xl font-semibold text-slate-800 uppercase">Услуги</p>
+      </div>
+
+      <!-- <p class="text-xs">{{ services }}</p> -->
+
+      <div class="gap-8 columns-1 xl:columns-2">
+
+        <div v-for="service in services" :key="service.id" class="break-inside-avoid-column">
+          <div class="mb-8">
+            <div class="my-1">
+              <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
+            </div>
+          
+            <p class="text-slate-800" v-html="service.text"></p>
+          </div>
         </div>
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Обучение и техническая поддержка</p>
-          <p>{{ textTwo }}</p>
-        </div>
-        <div class="text-center">
-          <p class="text-xl py-2 font-semibold">Запасные части и комплектующие</p>
-          <p>{{ textThird }}</p>
-        </div>
+
       </div>
 
     </div>
@@ -30,6 +35,12 @@
     name: 'ContactSection',
     components: {
       // HeaderSection,
+    },
+    props: {
+      services: {
+        type: Array,
+        default: Array,
+      },
     },
     data() {
       return {

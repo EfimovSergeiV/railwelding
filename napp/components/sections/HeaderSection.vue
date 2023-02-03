@@ -11,10 +11,10 @@
         <div class="absolute w-full h-full">
 
           <div class="flex justify-between items-center px-8 py-4">
-            <div class=""><p class="text-white">English</p></div>
+            <div class=""><p class="text-white text-xs font-semibold">English</p></div>
             <div class="flex items-center gap-4">
-              <a href="mailto:info@railwelding.com" class="text-white mdi mdi-email-outline"> info@railwelding.com</a>
-              <a href="tel:+494514584" class="text-white mdi mdi-phone"> +49 451 45 84</a>
+              <a href="mailto:info@railwelding.com" class="text-white mdi mdi-email-outline text-xs font-semibold"> info@railwelding.com</a>
+              <a href="tel:+494514584" class="text-white mdi mdi-phone text-xs font-semibold"> +49 451 45 84</a>
             </div>
           </div>
 
