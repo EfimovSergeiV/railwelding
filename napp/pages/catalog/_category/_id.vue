@@ -1,22 +1,22 @@
 <template>
-  <div class="">
-    <!-- <HeaderSection />
+  <div class="mx-auto lg:max-w-7xl lg:px-8">
+    <HeaderSection />
     <ProductSection :product="product" />
-    <FooterSection /> -->
+    <FooterSection />
   </div>
 </template>
   
   <script>
-  // import HeaderSection from '~/components/sections/HeaderSection.vue';
-  // import ProductSection from '~/components/sections/ProductSection.vue';
-  // import FooterSection from '~/components/sections/FooterSection.vue';
+  import HeaderSection from '~/components/sections/HeaderSection.vue';
+  import ProductSection from '~/components/sections/ProductSection.vue';
+  import FooterSection from '~/components/sections/FooterSection.vue';
   
   export default {
     name: 'CatalogPage',
     components: {
-      // HeaderSection,
-      // ProductSection,
-      // FooterSection,
+      HeaderSection,
+      ProductSection,
+      FooterSection,
     },
     async asyncData({ $axios, params }) {
       const product = await $axios.$get(`c/product/${params.id}`)

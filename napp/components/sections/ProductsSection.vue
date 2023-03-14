@@ -11,14 +11,14 @@
           <div class="grid grid-cols-1">
 
             <div class="mx-8 mb-8 w-[600px]">
-              <div class="my-4" v-for="category in products" :key="category.id">
+              <div v-for="category in products" :key="category.id" class="my-4">
                 
                 <p class="text-lg font-semibold text-slate-800"> {{ category.name }}</p>
-                <p class="text-sm my-2 text-slate-800" v-if="category.description"> {{ category.description }}</p>
+                <p v-if="category.description" class="text-sm my-2 text-slate-800"> {{ category.description }}</p>
                 
                 <div class="my-1">
-                  <div class="my-1" v-for="product in category.products" :key="product.id">
-                    <p class="px-4 font-semibold text-slate-800">{{ product.name }}</p>
+                  <div v-for="product in category.products" :key="product.id" class="my-1">
+                    <nuxt-link :to="localePath({name: 'catalog-category-id', params: { category: 'welding', id: 10}})" class="px-4 font-semibold text-slate-800"> {{ product.name }}</nuxt-link>
                   </div>                  
                 </div>
 
