@@ -2,6 +2,35 @@
 
 
   <header class="mx-auto lg:max-w-7xl lg:px-8">
+
+
+    <div class="">
+      <div class="grid grid-cols-7">
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Машины для сварки</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Комплектующие</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Испытательное оборудование</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Рельсосварочный комплекс</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Услуги</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">О компании</p>
+        </div>
+        <div class="flex items-center justify-center border border-main-primary">
+          <p class="text-sm text-center">Язык</p>
+        </div>
+      </div>
+    </div>
+
+
     <div class="h-0.5 bg-main-primary"></div>
     
     <div class="bg-[url('images/header-bg.jpg')] h-[480px] bg-no-repeat bg-left-bottom bg-cover">
