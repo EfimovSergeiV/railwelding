@@ -1,5 +1,5 @@
 <template>
-  <footer class="mx-auto lg:max-w-7xl lg:px-8">
+  <footer class="mmx-auto llg:max-w-7xl ">
 
     <div class="bg-main-primary px-8">
 

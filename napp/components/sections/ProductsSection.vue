@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto lg:max-w-7xl lg:px-8">
+    <div class="mx-auto lg:max-w-7xl ">
       <div class="bg-white px-8">
 
 

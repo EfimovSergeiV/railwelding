@@ -1,5 +1,5 @@
 <template>
-  <footer class="mx-auto lg:max-w-7xl lg:px-8">
+  <footer class="mx-auto lg:max-w-7xl ">
     <div class="py-8 px-8 bg-white">
 
       <div class="flex justify-between">

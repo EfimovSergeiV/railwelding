@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto lg:max-w-7xl lg:px-8">
+  <div class="mx-auto lg:max-w-7xl">
 
     <div class="px-8 bg-white">
 
@@ -47,7 +47,7 @@
               <div class="flex items-center h-full">
                 <img :src="service.img" />
               </div>
-              
+
               <div class="grid grid-cols-1 ">
                 <div class="flex items-center h-full">
 

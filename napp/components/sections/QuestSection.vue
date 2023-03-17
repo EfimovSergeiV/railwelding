@@ -1,5 +1,5 @@
 <template>
-  <footer class="mx-auto lg:max-w-7xl lg:px-8">
+  <footer class="mx-auto lg:max-w-7xl ">
     <div class="px-8 bg-white">
 
       <div class="bg-[url('images/rails-bg.jpg')] h-[480px] bg-no-repeat bg-left-bottom bg-cover">

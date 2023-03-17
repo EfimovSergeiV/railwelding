@@ -1,7 +1,7 @@
 <template>
 
 
-  <header class="mx-auto lg:max-w-7xl lg:px-8">
+  <header class="mmx-auto llg:max-w-7xl">
 
 
 
@@ -9,16 +9,16 @@
 
     <div class="h-0.5 bg-main-primary"></div>
     
-      <div class="bg-[url('images/header-bg.jpg')] h-[500px] bg-no-repeat bg-left-bottom bg-cover">
+      <div class="bg-[url('images/header-bg.jpg')] h-screen hh-[500px] bg-no-repeat bg-left-bottom bg-cover">
 
-        <div class="bg-main-primary/80 hover:bg-main-primary/90 transition-all duration-1000 h-full relative">
+        <div class="bg-main-primary/80 transition-all duration-1000 h-full relative">
 
           <div class="absolute w-full h-full">
 
 
 
-            <div class="">
-              <div class="grid grid-cols-7">
+            <div class="font-bold absolute w-full">
+              <div class="flex items-center justify-center gap-12 py-8">
                 <div class="flex items-center justify-center py-1">
                   <p class="text-base text-center text-white">Машины для сварки</p>
                 </div>
@@ -44,15 +44,16 @@
             </div>
 
 
-            <div class="flex justify-between items-center px-8 h-full">
+            <div class="flex justify-between items-center px-20 h-full">
               <div class="">
-                <p class="text-white text-3xl w-4/5">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+                <div class="my-10">
+                  <nuxt-link :to="localePath({name: 'index'})">
+                    <img src="logo-white.png" class=" h-9" />
+                  </nuxt-link>
+                </div>                
+                <p class="text-white text-4xl w-5/5">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
               </div>
-              <div class="">
-                <nuxt-link :to="localePath({name: 'index'})">
-                  <img src="logo-white.png" class=" h-9" />
-                </nuxt-link>
-              </div>
+
             </div>
 
           </div>
@@ -61,7 +62,7 @@
         
       </div>
 
-    <div class="bg-main-primary bg-gradient-to-br from-[#002F52] via-[#003863] to-[#002F52]">
+    <!-- <div class="bg-main-primary bg-gradient-to-br from-[#002F52] via-[#003863] to-[#002F52]">
 
 
       <div class="flex items-center justify-between px-8 py-5">
@@ -77,7 +78,7 @@
           
         </div>
       </div>
-    </div>
+    </div> -->
 
   </header>
 
