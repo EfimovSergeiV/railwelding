@@ -9,7 +9,7 @@
 
     <div class="h-0.5 bg-main-primary"></div>
     
-      <div class="bg-[url('images/header-bg.jpg')] h-[380px] bg-no-repeat bg-left-bottom bg-cover">
+      <div class="bg-[url('images/header-bg.jpg')] h-[500px] bg-no-repeat bg-left-bottom bg-cover">
 
         <div class="bg-main-primary/80 hover:bg-main-primary/90 transition-all duration-1000 h-full relative">
 
@@ -20,25 +20,25 @@
             <div class="">
               <div class="grid grid-cols-7">
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Машины для сварки</p>
+                  <p class="text-base text-center text-white">Машины для сварки</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Комплектующие</p>
+                  <p class="text-base text-center text-white">Комплектующие</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Испытательное оборудование</p>
+                  <p class="text-base text-center text-white">Испытательное оборудование</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Рельсосварочный комплекс</p>
+                  <p class="text-base text-center text-white">Рельсосварочный комплекс</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Услуги</p>
+                  <p class="text-base text-center text-white">Услуги</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">О компании</p>
+                  <p class="text-base text-center text-white">О компании</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-white">Язык</p>
+                  <p class="text-base text-center text-white">Язык</p>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@
 
             <div class="flex justify-between items-center px-8 h-full">
               <div class="">
-                <p class="text-white text-4xl w-4/5 select-none">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+                <p class="text-white text-3xl w-4/5">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
               </div>
               <div class="">
                 <nuxt-link :to="localePath({name: 'index'})">
@@ -58,20 +58,21 @@
           </div>
 
         </div>
+        
       </div>
 
-    <div class="bg-main-primary">
+    <div class="bg-main-primary bg-gradient-to-br from-[#002F52] via-[#003863] to-[#002F52]">
 
 
-      <div class="flex items-center justify-between px-8 py-8">
+      <div class="flex items-center justify-between px-8 py-5">
         <div class="flex gap-8">
-          <p class="text-white">info@railwelding.com</p>
+          <p class="text-white text-4xl">info@railwelding.com</p>
           
         </div>
         <div class="">
-          <p class="text-white font-semibold text-2xl text-center">+49 451 45 84</p>
-          <div class="px-8 mt-4 py-2 bg-gray-100">
-            <p class="font-bold uppercase text-gray-700">Заказать звонок</p>
+          <p class="text-white text-2xl text-center">+ 49 (451) 045 84 84</p>
+          <div class="px-8 mt-3 py-2 bg-gray-100">
+            <p class="font-semibold text-xl  uppercase text-gray-700">Заказать звонок</p>
           </div>
           
         </div>

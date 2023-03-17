@@ -1,24 +1,71 @@
 <template>
   <div class="mx-auto lg:max-w-7xl lg:px-8">
 
-    <div class="select-none py-8 px-8 bg-white">
+    <div class="px-8 bg-white">
 
-      <div class="flex justify-center items-center">
+      <!-- <div class="flex justify-center items-center">
         <p class="mb-4 text-xl font-semibold text-slate-800 uppercase">Услуги</p>
-      </div>
+      </div> -->
 
       <!-- <p class="text-xs">{{ services }}</p> -->
 
-      <div class="gap-8 columns-1 xl:columns-2">
+      <div class="grid grid-cols-1">
 
-        <div v-for="service in services" :key="service.id" class="break-inside-avoid-column">
-          <div class="mb-8">
-            <div class="my-1">
-              <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
-            </div>
+        <div v-for="service, item in services" :key="service.id" class="break-inside-avoid-column">
           
-            <p class="text-slate-800 text-sm" v-html="service.text"></p>
+          <div v-if="item % 2 == 0" class="my-8">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 ">
+
+                <div class="flex items-center h-full">
+
+                  <div class="">
+                    <div class="my-1">
+                      <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
+                    </div>
+                    <!-- eslint-disable vue/no-v-html -->
+                      <p class="text-slate-800 text-sm" v-html="service.text"></p>
+                    <!--eslint-enable-->
+                    </div>                    
+                  </div>
+
+                </div>
+
+              <div>
+
+                <div class="flex items-center h-full">
+                  <img :src="service.img" />
+                </div>
+
+              </div>
+            </div>
           </div>
+
+          <div v-else class="my-8">
+            <div class="grid grid-cols-2 gap-4">
+              
+              <div class="flex items-center h-full">
+                <img :src="service.img" />
+              </div>
+              
+              <div class="grid grid-cols-1 ">
+                <div class="flex items-center h-full">
+
+                  <div class="">
+                    <div class="my-1">
+                      <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
+                    </div>
+                    <!-- eslint-disable vue/no-v-html -->
+                      <p class="text-slate-800 text-sm" v-html="service.text"></p>
+                    <!--eslint-enable-->                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
