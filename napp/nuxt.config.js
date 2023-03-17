@@ -25,7 +25,7 @@ export default {
     configPath: 'tailwind.config.js',
     exposeConfig: true,
     config: {},
-    injectPosition: 0,
+    // injectPosition: 0,
     viewer: true,
     injectPosition: { 
       // 'low-priority' will have lower priority than Tailwind stylesheet, 

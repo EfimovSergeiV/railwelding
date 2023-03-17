@@ -4,66 +4,79 @@
   <header class="mx-auto lg:max-w-7xl lg:px-8">
 
 
-    <div class="">
-      <div class="grid grid-cols-7">
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Машины для сварки</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Комплектующие</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Испытательное оборудование</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Рельсосварочный комплекс</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Услуги</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">О компании</p>
-        </div>
-        <div class="flex items-center justify-center border border-main-primary">
-          <p class="text-sm text-center">Язык</p>
-        </div>
-      </div>
-    </div>
+
 
 
     <div class="h-0.5 bg-main-primary"></div>
     
-    <div class="bg-[url('images/header-bg.jpg')] h-[480px] bg-no-repeat bg-left-bottom bg-cover">
+      <div class="bg-[url('images/header-bg.jpg')] h-[380px] bg-no-repeat bg-left-bottom bg-cover">
 
-      <div class="bg-main-primary/80 hover:bg-main-primary/90 transition-all duration-1000 h-full relative">
+        <div class="bg-main-primary/80 hover:bg-main-primary/90 transition-all duration-1000 h-full relative">
 
-        <div class="absolute w-full h-full">
+          <div class="absolute w-full h-full">
 
-          <div class="flex justify-between items-center px-8 py-4">
-            <div class=""><p class="text-white text-xs font-semibold">English</p></div>
-            <div class="flex items-center gap-4">
-              <a href="mailto:info@railwelding.com" class="text-white mdi mdi-email-outline text-xs font-semibold"> info@railwelding.com</a>
-              <a href="tel:+494514584" class="text-white mdi mdi-phone text-xs font-semibold"> +49 451 45 84</a>
-            </div>
-          </div>
 
-          <div class="flex justify-between items-center px-8 pb-16 h-full">
+
             <div class="">
-              <p class="text-white text-4xl font-semibold w-4/5 select-none">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+              <div class="grid grid-cols-7">
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Машины для сварки</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Комплектующие</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Испытательное оборудование</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Рельсосварочный комплекс</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Услуги</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">О компании</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-white">Язык</p>
+                </div>
+              </div>
             </div>
-            <div class="">
-              <nuxt-link :to="localePath({name: 'index'})">
-                <img src="logo-white.png" class="" />
-              </nuxt-link>
+
+
+            <div class="flex justify-between items-center px-8 h-full">
+              <div class="">
+                <p class="text-white text-4xl w-4/5 select-none">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+              </div>
+              <div class="">
+                <nuxt-link :to="localePath({name: 'index'})">
+                  <img src="logo-white.png" class=" h-9" />
+                </nuxt-link>
+              </div>
             </div>
+
           </div>
 
         </div>
+      </div>
 
+    <div class="bg-main-primary">
+
+
+      <div class="flex items-center justify-between px-8 py-8">
+        <div class="flex gap-8">
+          <p class="text-white">info@railwelding.com</p>
+          
+        </div>
+        <div class="">
+          <p class="text-white font-semibold text-2xl text-center">+49 451 45 84</p>
+          <div class="px-8 mt-4 py-2 bg-gray-100">
+            <p class="font-bold uppercase text-gray-700">Заказать звонок</p>
+          </div>
+          
+        </div>
       </div>
     </div>
-
-    <div class="h-0.5 bg-main-primary"></div>
 
   </header>
 

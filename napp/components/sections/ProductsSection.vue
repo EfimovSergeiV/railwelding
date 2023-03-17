@@ -1,36 +1,109 @@
 <template>
     <div class="mx-auto lg:max-w-7xl lg:px-8">
-      <div class="sselect-none bg-white">
+      <div class="bg-white">
 
-        <div class="pt-8 flex justify-start items-center mx-8">
-          <p class="text-xl uppercase font-semibold text-slate-800">Оборудование</p>
-        </div>
-  
-        <div class="flex gap-4">
 
-          <div class="grid grid-cols-1">
+        <div class="flex gap-4 py-4">
 
-            <div class="mx-8 mb-8 w-[600px]">
-              <div v-for="category in products" :key="category.id" class="my-4">
-                
-                <p class="text-lg font-semibold text-slate-800"> {{ category.name }}</p>
-                <p v-if="category.description" class="text-sm my-2 text-slate-800"> {{ category.description }}</p>
-                
-                <div class="my-1">
-                  <div v-for="product in category.products" :key="product.id" class="my-1">
-                    <nuxt-link :to="localePath({name: 'catalog-category-id', params: { category: 'welding', id: 10}})" class="px-4 font-semibold text-slate-800"> {{ product.name }}</nuxt-link>
-                  </div>                  
-                </div>
-
+          <div class="flex items-center justify-center px-4">
+            <div class="">
+              <div class="flex">
+                <p class="border-b-2 border-gray-700 py-2 text-2xl font-semibold">
+                  Компания RAILWELDING
+                </p>                
               </div>
+
+              
+             <div class="py-2">
+              <p class="text-lg">
+                Мы лидеруем в производстве рельсосварочного оборудования. Наши иновации
+                и подход обеспечивают надёжность выпускаемого оборудования. Мы предлогаем рельсосварочное
+                машины и комплексные решения, разработанные с учётом особенностей проектов и потребностей заказчика.
+                Берём на себя организацию доставки и предлогаем сервисное обслуживание.
+              </p> 
+            </div>             
+
             </div>
-
-          </div>
-          <div class="w- [600px]">
-
             
           </div>
 
+
+          <div class="">
+            <div class="">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1H-vSHVOxoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="py-4">
+          <div class="grid grid-cols-4 gap-4">
+
+            <div class="relative">
+              <div class="flex justify-center items-center">
+                <img src="img/1.jpg" class="w-full" />
+                <div class="absolute h-20 w-full bottom-0">
+                  <div class="h-full bg-main-primary/80">
+                    
+                    <div class="flex items-center justify-center p-2 h-full">
+                      <p class="text-white">Машины для сварки</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="flex justify-center items-center">
+                <img src="img/2.jpg" class="w-full" />
+                <div class="absolute h-20 w-full bottom-0">
+                  <div class="h-full bg-main-primary/80">
+                    
+                    <div class="flex items-center justify-center p-2 h-full">
+                      <p class="text-white">Комплектующие</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="flex justify-center items-center">
+                <img src="img/3.jpg" class="w-full" />
+                <div class="absolute h-20 w-full bottom-0">
+                  <div class="h-full bg-main-primary/80">
+                    
+                    <div class="flex items-center justify-center p-2 h-full">
+                      <p class="text-white">Испытательное оборудование</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="flex justify-center items-center">
+                <img src="img/1.jpg" class="w-full" />
+                <div class="absolute h-20 w-full bottom-0">
+                  <div class="h-full bg-main-primary/80">
+                    
+                    <div class="flex items-center justify-center p-2 h-full">
+                      <p class="text-white">Рельсосварочный комплекс</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>          
         </div>
   
       </div>

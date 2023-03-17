@@ -2,6 +2,18 @@
   <footer class="mx-auto lg:max-w-7xl lg:px-8">
     <div class="py-8 px-8 select-none bg-white">
 
+      <div class="">
+
+
+        <div class="flex justify-center py-4">
+          <p class="text-slate-900 uppercase text-xl font-bold">География продаж</p>
+        </div>
+
+        <div class="flex justify-center">
+          <img src="maps.png" />
+        </div>
+        
+      </div>
       
       <div class="flex items-center justify-center">
         <p class="text-slate-900 uppercase text-xl font-bold">Компания Railwelding</p>

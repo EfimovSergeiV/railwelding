@@ -4,7 +4,7 @@
     <HeaderSection />
     <ProductsSection :products="products" />
     <QuestSection />
-    <ServicesSection :services="services" />
+    <!-- <ServicesSection :services="services" /> -->
     <ContactSection />
     <AboutSection />
     <FooterSection />
@@ -17,23 +17,23 @@
 import HeaderSection from '@/components/sections/HeaderSection.vue'
 import ProductsSection from '~/components/sections/ProductsSection.vue'
 import QuestSection from '~/components/sections/QuestSection.vue'
-import ServicesSection from '@/components/sections/ServicesSection.vue'
+// import ServicesSection from '@/components/sections/ServicesSection.vue'
 import ContactSection from '~/components/sections/ContactSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
 import FooterSection from '@/components/sections/FooterSection.vue'
 
 export default {
-  scrollToTop: false,
   name: 'IndexPage',
   components: {
     HeaderSection,
     ProductsSection,
     QuestSection,
-    ServicesSection,
+    // ServicesSection,
     ContactSection,
     AboutSection,
     FooterSection,
   },
+  scrollToTop: false,
   async asyncData({ $axios }) {
     const products = await [
       { "id": 1, "name": "Оборудование для стыковой сварки рельсов","description": null, "products": [{ "id": 1, "name": "Мобильная машина для стыковой сварки рельсов типа FBM-60" }, { "id": 1, "name": "Стационарная машина типа МСР-65.01 для стыковой сварки рельсов" }, { "id": 1, "name": "Мобильная машина для стыковой сварки рельсов типа FBM-140" }, { "id": 1, "name": "Стационарная машина типа МСО-120.01 для стыковой сварки рельсов" }]},
