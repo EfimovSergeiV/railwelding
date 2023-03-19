@@ -11,7 +11,7 @@
     
       <div class="bg-[url('images/header-bg.jpg')] h-screen hh-[500px] bg-no-repeat bg-left-bottom bg-cover">
 
-        <div class="bg-main-primary/80 transition-all duration-1000 h-full relative">
+        <div class="bbg-main-primary/80 bg-gradient-to-br from-main-primary/80 via-main-secondary/40 to-main-primary/90 transition-all duration-1000 h-full relative">
 
           <div class="absolute w-full h-full">
 
@@ -46,7 +46,7 @@
 
             <div class="flex justify-between items-center px-20 h-full">
               <div class="">
-                <div class="my-10">
+                <div class="my-4">
                   <nuxt-link :to="localePath({name: 'index'})">
                     <img src="logo-white.png" class=" h-9" />
                   </nuxt-link>

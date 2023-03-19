@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg-slate-200">
+  <div class="bg-main-secondary/10">
     <!-- container mx-auto max-w-7xl px-4 lg:max-w-7xl  bg-gradient-to-r from-white to-gray-200 text-main-dark-->
 
     <transition name="fade" mode="out-in">
