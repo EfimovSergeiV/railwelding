@@ -1,17 +1,19 @@
 <template>
 
 
-  <header class="mmx-auto llg:max-w-7xl">
+  <header class="h-screen bg-[url('images/header-bg.jpg')] bg-no-repeat bg-left-bottom bg-cover">
+    <div class="bg-gradient-to-br from-main-primary/80 via-main-secondary/40 to-main-primary/90 h-full">
+
+    </div>
 
 
 
 
-
-    <div class="h-0.5 bg-main-primary"></div>
+    <!-- <div class="h-0.5 bg-main-primary"></div>
     
-      <div class="bg-[url('images/header-bg.jpg')] h-screen hh-[500px] bg-no-repeat bg-left-bottom bg-cover">
+      <div class="  hh-[500px] bg-no-repeat bg-left-bottom bg-cover">
 
-        <div class="bbg-main-primary/80 bg-gradient-to-br from-main-primary/80 via-main-secondary/40 to-main-primary/90 transition-all duration-1000 h-full relative">
+        <div class="bg-gradient-to-br from-main-primary/80 via-main-secondary/40 to-main-primary/90 transition-all duration-1000 h-full relative">
 
           <div class="absolute w-full h-full">
 
@@ -51,16 +53,20 @@
                     <img src="logo-white.png" class=" h-9" />
                   </nuxt-link>
                 </div>                
-                <p class="text-white text-4xl w-5/5">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+                <p class="text-slate-200 font-black text-[48px] w-5/5">Разработка и производство <br> индивудуальных машин для сварки рельсов development</p>
               </div>
 
             </div>
+
+
 
           </div>
 
         </div>
         
-      </div>
+      </div> -->
+
+    </header>
 
     <!-- <div class="bg-main-primary bg-gradient-to-br from-[#002F52] via-[#003863] to-[#002F52]">
 
@@ -80,7 +86,7 @@
       </div>
     </div> -->
 
-  </header>
+  
 
     <!-- <div class="bg-slate-700">
       <div class="h-3 bg-main-primary" style="box-shadow: 0px 5px 5px #00000095;"></div>
