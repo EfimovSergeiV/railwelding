@@ -57,12 +57,12 @@
                 <div class="">
                   <p class="text-white font-black text-[32px]">Почему выбирают нас ?</p>
                   <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Полный производственный цикл</p></div>
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Сервисное обслуживание и поддержка</p></div>
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Персональный менеджер</p></div>
-                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Полный производственный цикл</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Сервисное обслуживание и поддержка</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Персональный менеджер</p></div>
+                    <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
                   </div>                  
                 </div>
                 <div class="grid grid-cols-1 gap-1 text-right">
@@ -153,7 +153,7 @@
         <div class="">
           <p class="text-white text-2xl text-center">+ 49 (451) 045 84 84</p>
           <div class="px-8 mt-3 py-2 bg-gray-100">
-            <p class="font-semibold text-xl  uppercase text-gray-700">Заказать звонок</p>
+            <p class="font-semibold text-xl  text-gray-700">Заказать звонок</p>
           </div>
           
         </div>
