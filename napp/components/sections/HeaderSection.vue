@@ -14,7 +14,7 @@
                   <img src="logo.png" class=" h-6" />
                 </nuxt-link>                
               </div>
-              <div class="flex gap-4 items-center">
+              <div class="flex gap-4 items-center px-4">
                 <div class="flex items-center justify-center py-1">
                   <p class="text-sm text-center text-gray-900">Рельсосварочное оборудование</p>
                 </div>
@@ -51,7 +51,7 @@
           </div>
 
 
-          <div class="bg-white/40 backdrop-blur-sm py-1">
+          <div class="bg-gradient-to-br from-white/50 via-white/30 to-white/60 backdrop-blur-sm py-1">
             <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-center justify-between">
@@ -69,7 +69,7 @@
                 <div class="grid grid-cols-1 gap-3 text-right">
                   <p class="text-gray-800">info@railwelding.ru</p>
                   <p class="text-gray-800 font-semibold text-2xl">+49 (123) 000 45 45</p>
-                  <button class="bg-white font-semibold text-gray-800 px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
+                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-400 font-semibold text-gray-800 px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
                 </div>
               </div>
             </div>            
