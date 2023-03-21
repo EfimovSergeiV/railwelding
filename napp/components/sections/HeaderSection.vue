@@ -54,9 +54,9 @@
           <div class="bg-gray-700/80 backdrop-blur-sm py-1">
             <div class="container mx-auto px-4 py-4 lg:max-w-7xl lg:px-8">
               
-              <div class="flex items-end justify-between">
+              <div class="flex items-center justify-between">
                 <div class="">
-                  <p class="text-slate-200 font-black text-2xl">Почему выбирают нас?</p>
+                  <p class="text-slate-200 font-black text-2xl py-4">Почему выбирают нас?</p>
                   <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
