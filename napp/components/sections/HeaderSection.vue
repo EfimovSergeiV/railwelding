@@ -47,7 +47,7 @@
                 <img src="logo.png" class=" h-6" />
               </nuxt-link> -->
             </div>
-            <p class="text-slate-200 font-black text-[42px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+            <p class="text-slate-200 font-black text-[36px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
           </div>
 
           <div class="bg-gradient-to-br from-main-primary/50 via-main-primary/40 to-main-secondary/60 backdrop-blur-sm border-t border-main-primary/40 py-4 2xl:py-8">
@@ -55,7 +55,7 @@
               
               <div class="flex items-center justify-between">
                 <div class="">
-                  <p class="text-white font-black text-[32px]">Почему выбирают нас ?</p>
+                  <p class="text-white font-black text-xl">Почему выбирают нас ?</p>
                   <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
                     <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
                     <div class=""><p class="text-xs font-semibold mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="grid grid-cols-1 gap-1 text-right">
                   <p class="text-gray-100">info@railwelding.ru</p>
-                  <p class="text-white font-semibold text-2xl">+49 (123) 000 45 45</p>
+                  <p class="text-white font-semibold text-xl">+49 (123) 000 45 45</p>
                   <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-8 py-2 rounded-md shadow-md shadow-main-secondary mt-2">Оформить заявку сейчас</button>
                 </div>
               </div>
