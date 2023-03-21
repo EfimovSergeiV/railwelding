@@ -1,13 +1,90 @@
 <template>
 
+  <header class="h-screen bg-[url('images/header-bg.jpg')] bg-center">
+    <div class="bg-gradient-to-br from-main-primary/90 via-main-secondary/50 to-main-primary/90 h-full">
+      <div class=" h-full">
 
-  <header class="h-screen bg-[url('images/header-bg.jpg')] bg-no-repeat bg-left-bottom bg-cover">
-    <div class="bg-gradient-to-br from-main-primary/80 via-main-secondary/40 to-main-primary/90 h-full">
+        <div class="grid grid-cols-1 content-between h-full">
 
+          <div class="hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
+            <div class="flex items-center justify-between gap-12 my-4 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/60 rounded-md shadow-md shadow-gray-800">
+
+              <div class=" py-1">
+                <nuxt-link :to="localePath({name: 'index'})">
+                  <img src="logo.png" class=" h-6" />
+                </nuxt-link>                
+              </div>
+              <div class="flex gap-4 items-center">
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Машины для сварки</p>
+                </div>
+                <!-- <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Комплектующие</p>
+                </div> -->
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Испытательное оборудование</p>
+                </div>
+                <!-- <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Рельсосварочный комплекс</p>
+                </div> -->
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Услуги</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">О компании</p>
+                </div>
+                <div class="flex items-center justify-center py-1">
+                  <p class="text-sm text-center text-gray-900">Язык</p>
+                </div>                
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
+            <div class="my-8">
+              <!-- <nuxt-link :to="localePath({name: 'index'})">
+                <img src="logo.png" class=" h-6" />
+              </nuxt-link> -->
+            </div>
+            <p class="text-slate-200 font-black text-[36px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+          </div>
+
+
+          <div class="bg-gray-700/80 backdrop-blur-sm py-1">
+            <div class="container mx-auto px-4 py-4 lg:max-w-7xl lg:px-8">
+              
+              <div class="flex items-end justify-between">
+                <div class="">
+                  <p class="text-slate-200 font-black text-2xl">Почему выбирают нас?</p>
+                  <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Полный производственный цикл</p></div>
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Сервисное обслуживание и поддержка</p></div>
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Персональный менеджер</p></div>
+                    <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
+                  </div>                  
+                </div>
+                <div class="grid grid-cols-1 gap-3 text-right">
+                  <p class="text-gray-100">info@railwelding.ru</p>
+                  <p class="text-gray-100 font-semibold text-2xl">+49 (123) 000 45 45</p>
+                  <button class="bg-white px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
+                </div>
+              </div>
+            </div>            
+          </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
     </div>
-
-
-
+  </header>
 
     <!-- <div class="h-0.5 bg-main-primary"></div>
     
@@ -66,7 +143,7 @@
         
       </div> -->
 
-    </header>
+    
 
     <!-- <div class="bg-main-primary bg-gradient-to-br from-[#002F52] via-[#003863] to-[#002F52]">
 
