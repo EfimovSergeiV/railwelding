@@ -7,7 +7,7 @@
         <div class="grid grid-cols-1 content-between h-full">
 
           <div class="hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
-            <div class="flex items-center justify-between gap-12 my-4 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/60 rounded-md shadow-md shadow-gray-800">
+            <div class="flex items-center justify-between gap-12 my-4 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/60 rounded-md shadow-md shadow-main-secondary">
 
               <div class=" py-1">
                 <nuxt-link :to="localePath({name: 'index'})">
@@ -16,25 +16,25 @@
               </div>
               <div class="flex gap-4 items-center px-4">
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Рельсосварочное оборудование</p>
+                  <p class="text-sm text-center text-main-primary font-semibold">Рельсосварочное оборудование</p>
                 </div>
                 <!-- <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Комплектующие</p>
+                  <p class="text-sm text-center text-main-primary">Комплектующие</p>
                 </div> -->
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Испытательное оборудование</p>
+                  <p class="text-sm text-center text-main-primary font-semibold">Испытательное оборудование</p>
                 </div>
                 <!-- <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Рельсосварочный комплекс</p>
+                  <p class="text-sm text-center text-main-primary">Рельсосварочный комплекс</p>
                 </div> -->
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Услуги</p>
+                  <p class="text-sm text-center text-main-primary font-semibold">Услуги</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">О компании</p>
+                  <p class="text-sm text-center text-main-primary font-semibold">О компании</p>
                 </div>
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Язык</p>
+                  <p class="text-sm text-center text-main-primary font-semibold">Язык</p>
                 </div>                
               </div>
             </div>
@@ -51,13 +51,13 @@
           </div>
 
 
-          <div class="bg-gradient-to-br from-white/50 via-white/30 to-white/60 backdrop-blur-sm py-1">
+          <div class="bg-gradient-to-br from-white/50 via-white/30 to-white/60 backdrop-blur-sm border-t border-white py-1">
             <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-center justify-between">
                 <div class="">
-                  <p class="text-gray-900 font-black text-2xl py-4">Почему выбирают нас?</p>
-                  <div class="grid grid-cols-3 gap-4 text-gray-800 py-4">
+                  <p class="text-main-secondary font-black text-2xl py-4">Почему выбирают нас ?</p>
+                  <div class="grid grid-cols-3 gap-4 text-main-primary py-4">
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Полный производственный цикл</p></div>
@@ -66,10 +66,10 @@
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
                   </div>                  
                 </div>
-                <div class="grid grid-cols-1 gap-3 text-right">
-                  <p class="text-gray-800">info@railwelding.ru</p>
-                  <p class="text-gray-800 font-semibold text-2xl">+49 (123) 000 45 45</p>
-                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-400 font-semibold text-gray-800 px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
+                <div class="grid grid-cols-1 gap-2 text-right">
+                  <p class="text-white">info@railwelding.ru</p>
+                  <p class="text-main-secondary font-semibold text-2xl">+49 (123) 000 45 45</p>
+                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-8 py-2 rounded-md shadow-md shadow-main-secondary">Оформить заявку сейчас</button>
                 </div>
               </div>
             </div>            
