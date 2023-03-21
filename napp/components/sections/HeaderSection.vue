@@ -16,7 +16,7 @@
               </div>
               <div class="flex gap-4 items-center">
                 <div class="flex items-center justify-center py-1">
-                  <p class="text-sm text-center text-gray-900">Машины для сварки</p>
+                  <p class="text-sm text-center text-gray-900">Рельсосварочное оборудование</p>
                 </div>
                 <!-- <div class="flex items-center justify-center py-1">
                   <p class="text-sm text-center text-gray-900">Комплектующие</p>
@@ -47,7 +47,7 @@
                 <img src="logo.png" class=" h-6" />
               </nuxt-link> -->
             </div>
-            <p class="text-slate-200 font-black text-[36px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
+            <p class="text-slate-200 font-black text-[42px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
           </div>
 
 
