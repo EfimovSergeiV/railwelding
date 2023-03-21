@@ -9,7 +9,7 @@
           <div class="fixed z-50 w-full">
             <div class=" hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
 
-              <div class="flex items-center justify-between gap-12 my-2 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/60 rounded-md shadow-md shadow-main-secondary">
+              <div class="flex items-center justify-between gap-12   my-1 2   py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
                 <div class="py-1">
                   <nuxt-link :to="localePath({name: 'index'})">
                     <img src="logo.png" class=" h-6" />
@@ -38,6 +38,7 @@
 
           </div>
 
+
           <div></div>
 
           <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
@@ -49,14 +50,13 @@
             <p class="text-slate-200 font-black text-[42px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
           </div>
 
-
-          <div class="bg-gradient-to-br from-white/50 via-white/40 to-white/60 backdrop-blur-sm border-t border-white py-1 2xl:py-6">
+          <div class="bg-gradient-to-br from-main-primary/50 via-main-primary/40 to-main-secondary/60 backdrop-blur-sm border-t border-main-primary/40 py-4 2xl:py-8">
             <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-center justify-between">
                 <div class="">
-                  <p class="text-main-secondary font-black text-2xl py-4">Почему выбирают нас ?</p>
-                  <div class="grid grid-cols-3 gap-4 text-main-primary py-4">
+                  <p class="text-white font-black text-[32px]">Почему выбирают нас ?</p>
+                  <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Полный производственный цикл</p></div>
@@ -65,16 +65,14 @@
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
                   </div>                  
                 </div>
-                <div class="grid grid-cols-1 gap-2 text-right">
-                  <p class="text-white">info@railwelding.ru</p>
-                  <p class="text-main-secondary font-semibold text-2xl">+49 (123) 000 45 45</p>
-                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-8 py-2 rounded-md shadow-md shadow-main-secondary">Оформить заявку сейчас</button>
+                <div class="grid grid-cols-1 gap-1 text-right">
+                  <p class="text-gray-100">info@railwelding.ru</p>
+                  <p class="text-white font-semibold text-2xl">+49 (123) 000 45 45</p>
+                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-8 py-2 rounded-md shadow-md shadow-main-secondary mt-2">Оформить заявку сейчас</button>
                 </div>
               </div>
             </div>            
           </div>
-
-
         </div>
 
 
