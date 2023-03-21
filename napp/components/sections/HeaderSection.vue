@@ -51,13 +51,13 @@
           </div>
 
 
-          <div class="bg-gray-700/80 backdrop-blur-sm py-1">
-            <div class="container mx-auto px-4 py-4 lg:max-w-7xl lg:px-8">
+          <div class="bg-white/40 backdrop-blur-sm py-1">
+            <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-center justify-between">
                 <div class="">
-                  <p class="text-slate-200 font-black text-2xl py-4">Почему выбирают нас?</p>
-                  <div class="grid grid-cols-3 gap-4 text-gray-100 py-4">
+                  <p class="text-gray-900 font-black text-2xl py-4">Почему выбирают нас?</p>
+                  <div class="grid grid-cols-3 gap-4 text-gray-800 py-4">
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
                     <div class=""><p class="text-xs font-semibold uppercase mdi mdi-brightness-1"> Полный производственный цикл</p></div>
@@ -67,9 +67,9 @@
                   </div>                  
                 </div>
                 <div class="grid grid-cols-1 gap-3 text-right">
-                  <p class="text-gray-100">info@railwelding.ru</p>
-                  <p class="text-gray-100 font-semibold text-2xl">+49 (123) 000 45 45</p>
-                  <button class="bg-white px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
+                  <p class="text-gray-800">info@railwelding.ru</p>
+                  <p class="text-gray-800 font-semibold text-2xl">+49 (123) 000 45 45</p>
+                  <button class="bg-white font-semibold text-gray-800 px-8 py-2 rounded-md shadow-md shadow-gray-800">Оформить заявку сейчас</button>
                 </div>
               </div>
             </div>            
