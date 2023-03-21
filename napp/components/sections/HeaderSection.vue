@@ -50,7 +50,7 @@
           </div>
 
 
-          <div class="bg-gradient-to-br from-white/50 via-white/30 to-white/60 backdrop-blur-sm border-t border-white py-1">
+          <div class="bg-gradient-to-br from-white/50 via-white/40 to-white/60 backdrop-blur-sm border-t border-white py-1 2xl:py-6">
             <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-center justify-between">
