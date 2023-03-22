@@ -7,18 +7,14 @@
     <div class=" bg-main-primary/90">
       <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
 
-        <div class="flex items-center h-28 justify-between">
+        <div class="flex items-center h-20 justify-between">
 
-          <div class=""><p class="text-white">Hallo welt</p></div>
-          <div class=""><p class="text-white">Hallo welt</p></div>
-          <div class=""><p class="text-white">Hallo welt</p></div>
-          <div class=""><p class="text-white">Hallo welt</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+150</span><p class="text-gray-100 text-sm">Сотрудников</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+3500</span><p class="text-gray-100 text-sm">Реализованных проектов</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+560 Га</span><p class="text-gray-100 text-sm">Площадь производства</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+200</span><p class="text-gray-100 text-sm">Волнистых попугаев</p></div>
 
         </div>
-
-        
-
-
 
       </div>
     </div>
