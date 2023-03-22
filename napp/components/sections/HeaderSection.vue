@@ -1,6 +1,6 @@
 <template>
 
-  <header class="h-screen min-h-screen bg-[url('images/header-bg.jpg')] bg-center">
+  <header class="h-screen min-h-screen bg-[url('images/header-bg.jpg')] bg-no-repeat bg-center">
     <div class="bg-gradient-to-br from-main-primary/70 via-main-secondary/30 to-main-primary/70 h-full">
       <div class=" h-full">
 
@@ -55,20 +55,20 @@
               
               <div class="flex items-end justify-between">
                 <div class="">
-                  <p class="text-white font-black text-xl my-6">Почему выбирают нас ?</p>
+                  <p class="text-white font-black text-xl my-4">Почему выбирают нас ?</p>
                   <div class="grid grid-cols-3 gap-4 text-gray-100">
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Полный производственный цикл</p></div>
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Сервисное обслуживание и поддержка</p></div>
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Персональный менеджер</p></div>
-                    <div class=""><p class="text-xs mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Более 17 лет успешной работы</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Собственное конструкторское бюро</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Полный производственный цикл</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Сервисное обслуживание и поддержка</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Персональный менеджер</p></div>
+                    <div class=""><p class="text-sm mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
                   </div>                  
                 </div>
                 <div class="grid grid-cols-1 gap-1 text-right">
                   <p class="text-gray-100">info@railwelding.ru</p>
                   <p class="text-white font-semibold text-xl">+49 (123) 000 45 45</p>
-                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-12 py-2 rounded-md shadow-md shadow-main-secondary mt-2">Заказать звонок</button>
+                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-12 py-2 rounded-md shadow-xl shadow-main-secondary mt-2">Заказать звонок</button>
                 </div>
               </div>
             </div>            

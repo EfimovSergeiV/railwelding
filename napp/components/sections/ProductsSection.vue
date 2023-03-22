@@ -4,15 +4,15 @@
 
   <div class="">
 
-    <div class=" bg-main-primary/90">
+    <div class=" bg-main-primary">
       <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
 
         <div class="flex items-center h-20 justify-between">
 
-          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+150</span><p class="text-gray-100 text-sm">Сотрудников</p></div>
-          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+3500</span><p class="text-gray-100 text-sm">Реализованных проектов</p></div>
-          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+560 Га</span><p class="text-gray-100 text-sm">Площадь производства</p></div>
-          <div class="flex items-center gap-4"><span class="font-bold text-white text-[32px]">+200</span><p class="text-gray-100 text-sm">Волнистых попугаев</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[36px]">+150</span><p class="text-gray-100 text-sm">Сотрудников</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[36px]">+3500</span><p class="text-gray-100 text-sm">Реализованных проектов</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[36px]">+560 Га</span><p class="text-gray-100 text-sm">Площадь производства</p></div>
+          <div class="flex items-center gap-4"><span class="font-bold text-white text-[36px]">+200</span><p class="text-gray-100 text-sm">Волнистых попугаев</p></div>
 
         </div>
 
@@ -23,14 +23,22 @@
     <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
       <div class="grid grid-cols-1 content-center bg-white min-h-screen">
         <div class="py-8">
-          <div class="grid grid-cols-4 gap-4">
-            <div v-for="i in 6" :key="i">
-              <div class="border border-gray-700 rounded-md h-80 w-full shadow-md shadow-main-secondary">
+          <div class="grid grid-cols-3 gap-4">
+            <div v-for="i in 7" :key="i">
+              <div class=" border-b border-r border-main-primary rounded-md h-56 w-full shadow-sm shadow-main-secondary bg-gradient-to-br from-main-primary/10 via-main-primary/20 to-main-secondary/30">
+                <div class="flex items-center justify-center h-full">
+                  
+                  <div class="">
+                    <p class="text-main-primary">Название категории или товара</p>
+                    <p class="text-main-primary text-xs">Название категории или товара</p>                    
+                  </div>
+
+                </div>
               </div>
             </div>
-            <div class="border border-gray-700 rounded-md h-80 w-full">
+            <div class="border-b border-r border-gray-700 rounded-md h-56 w-full shadow-sm shadow-main-secondary bg-gradient-to-br from-main-primary/10 via-main-primary/20 to-main-secondary/30">
               <div class="flex items-center justify-center h-full">
-                <p>Read more...</p>
+                <p class="text-main-primary font-bold">Read more...</p>
               </div>
             </div>
           </div>

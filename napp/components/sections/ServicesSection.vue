@@ -18,7 +18,7 @@
               <div class="grid grid-cols-1 ">
                 <div class="flex items-center h-full">
                   <div class=" -mr-60 py-4 px-4 bg-white/60 backdrop-blur-md border border-white/70 rounded-md shadow-md shadow-main-secondary">
-                    <div class="my-1">
+                    <div class="my-4">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>
                     <!-- eslint-disable vue/no-v-html -->
@@ -46,7 +46,7 @@
                 <div class="flex items-center h-full">
 
                   <div class="-ml-60 py-4 px-4 bg-white/60 backdrop-blur-md border border-white/40 rounded-md shadow-md shadow-main-secondary">
-                    <div class="my-1">
+                    <div class="my-4">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>
                     <!-- eslint-disable vue/no-v-html -->

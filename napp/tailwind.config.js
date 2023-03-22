@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// primary #002F52
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -10,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-primary': '#002F52',
+        'main-primary': '#074866',
         'main-secondary': '#0F293E',
         'main-dark': '#001E35',
         'main-info': '#2A72A9',
