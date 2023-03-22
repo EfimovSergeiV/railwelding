@@ -14,29 +14,23 @@
         <div v-for="service, item in services" :key="service.id" class="break-inside-avoid-column">
           
           <div v-if="item % 2 == 0" class="my-8">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 ggap-4">
               <div class="grid grid-cols-1 ">
-
                 <div class="flex items-center h-full">
-
-                  <div class="">
+                  <div class=" -mr-32 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
                     <div class="my-1">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>
                     <!-- eslint-disable vue/no-v-html -->
                       <p class="text-slate-800 text-sm" v-html="service.text"></p>
                     <!--eslint-enable-->
-                    </div>                    
-                  </div>
-
+                  </div>                    
                 </div>
-
+              </div>
               <div>
-
                 <div class="flex items-center h-full">
                   <img :src="service.img" />
                 </div>
-
               </div>
             </div>
           </div>
@@ -51,7 +45,7 @@
               <div class="grid grid-cols-1 ">
                 <div class="flex items-center h-full">
 
-                  <div class="">
+                  <div class="-ml-32 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
                     <div class="my-1">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>
