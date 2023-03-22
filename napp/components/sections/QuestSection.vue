@@ -3,7 +3,7 @@
     <div class="bg-white">
 
       <div class="bg-[url('images/rails-bg.jpg')] h-[480px] bg-no-repeat bg-left-bottom bg-cover">
-        <div class="bg-main-primary/70 hover:bg-main-primary/80 transition-all duration-1000 h-full relative">
+        <div class="bg-main-primary/70 hover:bg-main-primary/80 backdrop-blur-sm transition-all duration-1000 h-full relative">
           <div class="absolute w-full h-full">
 
             <div class="flex items-center justify-center h-full">

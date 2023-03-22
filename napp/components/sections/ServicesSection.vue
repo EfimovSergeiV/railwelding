@@ -17,7 +17,7 @@
             <div class="grid grid-cols-2 ggap-4">
               <div class="grid grid-cols-1 ">
                 <div class="flex items-center h-full">
-                  <div class=" -mr-32 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
+                  <div class=" -mr-60 py-4 px-4 bg-white/60 backdrop-blur-md border border-white/70 rounded-md shadow-md shadow-main-secondary">
                     <div class="my-1">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>
@@ -45,7 +45,7 @@
               <div class="grid grid-cols-1 ">
                 <div class="flex items-center h-full">
 
-                  <div class="-ml-32 py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
+                  <div class="-ml-60 py-4 px-4 bg-white/60 backdrop-blur-md border border-white/40 rounded-md shadow-md shadow-main-secondary">
                     <div class="my-1">
                       <p class="font-semibold text-lg text-slate-800">{{ service.name }}</p>
                     </div>

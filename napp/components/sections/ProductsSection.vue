@@ -2,38 +2,48 @@
 
 <!-- Noto Sans", "Open Sans" -->
 
+  <div class="">
+
+    <div class=" bg-main-primary/90">
+      <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
+
+        <div class="flex items-center h-28 justify-between">
+
+          <div class=""><p class="text-white">Hallo welt</p></div>
+          <div class=""><p class="text-white">Hallo welt</p></div>
+          <div class=""><p class="text-white">Hallo welt</p></div>
+          <div class=""><p class="text-white">Hallo welt</p></div>
+
+        </div>
+
+        
+
+
+
+      </div>
+    </div>
+
+
     <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
-
-
       <div class="grid grid-cols-1 content-center bg-white min-h-screen">
-
-
         <div class="py-8">
-
-
-
           <div class="grid grid-cols-4 gap-4">
             <div v-for="i in 6" :key="i">
               <div class="border border-gray-700 rounded-md h-80 w-full shadow-md shadow-main-secondary">
-                <p><span class="mdi mdi-brightness-1 text-gray-700"></span> Hallo welt</p>
               </div>
             </div>
-
             <div class="border border-gray-700 rounded-md h-80 w-full">
               <div class="flex items-center justify-center h-full">
                 <p>Read more...</p>
               </div>
             </div>
           </div>
-
         </div>
-
-
-
-
       </div>
     </div>
-  </template>
+
+  </div>
+</template>
   
   <script>
   // import HeaderSection from '@/components/sections/HeaderSection.vue'

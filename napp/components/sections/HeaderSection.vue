@@ -1,7 +1,7 @@
 <template>
 
   <header class="h-screen min-h-screen bg-[url('images/header-bg.jpg')] bg-center">
-    <div class="bg-gradient-to-br from-main-primary/90 via-main-secondary/50 to-main-primary/90 h-full">
+    <div class="bg-gradient-to-br from-main-primary/70 via-main-secondary/30 to-main-primary/70 h-full">
       <div class=" h-full">
 
         <div class="grid grid-cols-1 content-between h-full">
