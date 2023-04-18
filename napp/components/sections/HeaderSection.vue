@@ -9,30 +9,32 @@
           <div class="fixed z-50 w-full">
             <div class=" hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
 
-              <div class="flex items-center justify-between gap-12   my-6 12   py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
-                <div class="py-1">
-                  <nuxt-link :to="localePath({name: 'index'})">
-                    <img src="logo.png" class=" h-6" />
-                  </nuxt-link>                
+              <transition name="fade">
+                <div v-if="show" v-scroll="handleScroll" class="flex items-center justify-between gap-12   my-6 12   py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
+                  <div class="py-1">
+                    <nuxt-link :to="localePath({name: 'index'})">
+                      <img src="logo.png" class=" h-6" />
+                    </nuxt-link>                
+                  </div>
+                  <div class="flex gap-4 items-center px-4">
+                    <div class="flex items-center justify-center py-1">
+                      <p class="text-sm text-center text-main-primary font-semibold">Рельсосварочное оборудование</p>
+                    </div>
+                    <div class="flex items-center justify-center py-1">
+                      <p class="text-sm text-center text-main-primary font-semibold">Испытательное оборудование</p>
+                    </div>
+                    <div class="flex items-center justify-center py-1">
+                      <p class="text-sm text-center text-main-primary font-semibold">Услуги</p>
+                    </div>
+                    <div class="flex items-center justify-center py-1">
+                      <p class="text-sm text-center text-main-primary font-semibold">О компании</p>
+                    </div>
+                    <div class="flex items-center justify-center py-1">
+                      <p class="text-sm text-center text-main-primary font-semibold">Язык</p>
+                    </div>                
+                  </div>
                 </div>
-                <div class="flex gap-4 items-center px-4">
-                  <div class="flex items-center justify-center py-1">
-                    <p class="text-sm text-center text-main-primary font-semibold">Рельсосварочное оборудование</p>
-                  </div>
-                  <div class="flex items-center justify-center py-1">
-                    <p class="text-sm text-center text-main-primary font-semibold">Испытательное оборудование</p>
-                  </div>
-                  <div class="flex items-center justify-center py-1">
-                    <p class="text-sm text-center text-main-primary font-semibold">Услуги</p>
-                  </div>
-                  <div class="flex items-center justify-center py-1">
-                    <p class="text-sm text-center text-main-primary font-semibold">О компании</p>
-                  </div>
-                  <div class="flex items-center justify-center py-1">
-                    <p class="text-sm text-center text-main-primary font-semibold">Язык</p>
-                  </div>                
-                </div>
-              </div>
+              </transition>
 
             </div>
 
@@ -210,6 +212,7 @@
     data() {
       return {
         locale: this.$i18n.locale,
+        show: false,
       }
     },
     watch: {
@@ -225,7 +228,12 @@
     },
     methods: {
       handleScroll () {
-        console.log(window.scrollY)
+
+        if (window.scrollY > 50) {
+          this.show = true
+        } else {
+          this.show = false
+        }
       }
     }
   }
