@@ -216,6 +216,17 @@
       locale (lang) {
         this.$router.push(this.switchLocalePath(lang))
       }
+    },
+    beforeMount () {
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+      handleScroll () {
+        console.log(window.scrollY)
+      }
     }
   }
 </script>
