@@ -6,8 +6,10 @@
 
         <div class="grid grid-cols-1 content-between h-full">
 
-          <div class="fixed z-50 w-full">
+          <div id="nav-container" class="fixed z-50 w-full">
             <div class="hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
+
+              <div class=""></div>
 
               <!-- <transition name="fade"> -->
                 <div id="navbar" v-scroll="handleScroll" class="flex items-center justify-between gap-12 my-6 12 py-2 px-4 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary duration-700 transition-all">
@@ -67,10 +69,14 @@
                     <div class=""><p class="text-sm mdi mdi-brightness-1"> Решение нестандартных задач</p></div>
                   </div>                  
                 </div>
-                <div class="grid grid-cols-1 gap-1 text-right">
-                  <p class="text-gray-100">info@railwelding.ru</p>
-                  <p class="text-white font-semibold text-xl">+49 (123) 000 45 45</p>
-                  <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-12 py-2 rounded-md shadow-xl shadow-main-secondary mt-2">Заказать звонок</button>
+                <div class="grid grid-cols-1 gap-2 text-right">
+                  <div class="grid grid-cols-1 gap-1">
+                    <p class="text-gray-100">info@railwelding.ru</p>
+                    <p class="text-white font-semibold text-xl">+49 (123) 000 45 45</p>
+                  </div>
+                  <div class="">
+                    <button class="bg-gradient-to-tr from-white via-gray-200 to-gray-200 font-semibold text-main-secondary px-12 py-2 rounded-md shadow-xl shadow-main-secondary mt-2">Заказать звонок</button>
+                  </div>
                 </div>
               </div>
             </div>            
@@ -229,12 +235,15 @@
     methods: {
       handleScroll () {
         const navMenu = document.getElementById('navbar')
+        const navContainer = document.getElementById('nav-container')
         if (window.scrollY > 50) {
           navMenu.classList.add('bg-white/60')
+          navContainer.classList.add('fixed')
           // this.show = true
         } else {
           // this.show = false
           navMenu.classList.remove('bg-white/60')
+          navContainer.classList.remove('fixed')
         }
       }
     }
