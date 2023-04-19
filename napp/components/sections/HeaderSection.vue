@@ -7,10 +7,10 @@
         <div class="grid grid-cols-1 content-between h-full">
 
           <div class="fixed z-50 w-full">
-            <div class=" hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
+            <div class="hidden md:block container mx-auto px-4 lg:max-w-7xl lg:px-8">
 
-              <transition name="fade">
-                <div v-if="show" v-scroll="handleScroll" class="flex items-center justify-between gap-12   my-6 12   py-2 px-4 bg-white/60 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary">
+              <!-- <transition name="fade"> -->
+                <div id="navbar" v-scroll="handleScroll" class="flex items-center justify-between gap-12 my-6 12 py-2 px-4 backdrop-blur-sm border border-white/40 rounded-md shadow-md shadow-main-secondary duration-700 transition-all">
                   <div class="py-1">
                     <nuxt-link :to="localePath({name: 'index'})">
                       <img src="logo.png" class=" h-6" />
@@ -18,7 +18,7 @@
                   </div>
                   <div class="flex gap-4 items-center px-4">
                     <div class="flex items-center justify-center py-1">
-                      <p class="text-sm text-center text-main-primary font-semibold">Рельсосварочное оборудование</p>
+                      <p class="text-sm text-center text-main-primary font-semibold">{{ show }} Рельсосварочное оборудование</p>
                     </div>
                     <div class="flex items-center justify-center py-1">
                       <p class="text-sm text-center text-main-primary font-semibold">Испытательное оборудование</p>
@@ -34,7 +34,7 @@
                     </div>                
                   </div>
                 </div>
-              </transition>
+              <!-- </transition> -->
 
             </div>
 
@@ -52,7 +52,7 @@
             <p class="text-slate-200 font-black text-[36px]">Разработка и производство <br> индивудуальных машин для сварки рельсов</p>
           </div>
 
-          <div class="bg-gradient-to-br from-main-primary/50 via-main-primary/40 to-main-secondary/60 backdrop-blur-sm border-t border-main-primary/40 py-4 2xl:py-8">
+          <div class="bg-gradient-to-br from-main-primary/50 via-main-primary/40 to-main-secondary/60 backdrop-blur-sm border-t border-main-primary/40 py-8">
             <div class="container mx-auto px-4 lg:max-w-7xl lg:px-8">
               
               <div class="flex items-end justify-between">
@@ -212,7 +212,7 @@
     data() {
       return {
         locale: this.$i18n.locale,
-        show: false,
+        show: true,
       }
     },
     watch: {
@@ -228,11 +228,13 @@
     },
     methods: {
       handleScroll () {
-
+        const navMenu = document.getElementById('navbar')
         if (window.scrollY > 50) {
-          this.show = true
+          navMenu.classList.add('bg-white/60')
+          // this.show = true
         } else {
-          this.show = false
+          // this.show = false
+          navMenu.classList.remove('bg-white/60')
         }
       }
     }
